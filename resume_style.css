@@ -19,22 +19,29 @@ caption {
     font: italic 2em 標楷體;
 }
 tr {
-    height: 50px;
+    height: 3rem;
 }
 tr:first-child {
     text-align: center;
 }
 .title {
     font: italic 1.5em 標楷體;
-    width: 25%;
     color: brown;
 }
 .myself {
     font: italic 1.5em 標楷體;
-    width: 25px;
+    width: 3em;
     color: brown;
 }
+.info {
+    width: 3em;
+}
 img {
-    width: 130%;
+    width: 120%;
     height: auto;
+}
+.skill {
+    font: italic 1.5em 標楷體;
+    color: brown;
+    width: 10rem;
 }
