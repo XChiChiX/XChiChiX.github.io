@@ -4,7 +4,7 @@ hexo.extend.generator.register('notfoundPage', function(locals){
         path: '404.html',
         data: {
             type: '404',
-            title: '这个页面走丢了呢…'
+            title: '這個頁面走丟了呢…'
         },
         layout: '_pages/404'
     };
