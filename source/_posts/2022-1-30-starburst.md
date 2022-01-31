@@ -1,9 +1,9 @@
 ---
 title: starburst
 date: 2022-1-30
-categories: 測試
 tags: 星爆
-sticky: 100
+categories: 測試
+sticky: 
 comments: true
 toc: true
 ---
