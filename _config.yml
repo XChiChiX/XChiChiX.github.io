@@ -105,3 +105,8 @@ deploy:
   type: git
   repo: https://github.com/XChiChiX/XChiChiX.github.io.git
   branch: master
+
+sitemap:
+    path: sitemap.xml
+#    template: ./sitemap_template.xml
+    rel: false
