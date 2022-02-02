@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/site-logo.png">
-  <title>a134: 00948 - Fibonaccimal Base | XChiChiX</title>
+  <title>e507: 10252 - Common Permutation | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,25 +13,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="cpe, dp, uva, zerojudge, 費氏數列, 進制轉換" />
+    <meta name="keywords" content="cpe, uva, zerojudge" />
   
   <meta name="description" content="CPE 一顆星選集 49 道必考題">
 <meta property="og:type" content="article">
-<meta property="og:title" content="a134: 00948 - Fibonaccimal Base">
-<meta property="og:url" content="http://xchichix.github.io/2022/01/31/a134-00948/index.html">
+<meta property="og:title" content="e507: 10252 - Common Permutation">
+<meta property="og:url" content="http://xchichix.github.io/2022/02/02/e507-10252/index.html">
 <meta property="og:site_name" content="XChiChiX">
 <meta property="og:description" content="CPE 一顆星選集 49 道必考題">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
-<meta property="article:published_time" content="2022-01-31T10:53:45.000Z">
-<meta property="article:modified_time" content="2022-01-31T12:38:14.836Z">
+<meta property="article:published_time" content="2022-02-02T09:21:54.000Z">
+<meta property="article:modified_time" content="2022-02-02T09:37:33.471Z">
 <meta property="article:author" content="XChiChiX">
 <meta property="article:tag" content="zerojudge">
 <meta property="article:tag" content="uva">
 <meta property="article:tag" content="cpe">
-<meta property="article:tag" content="進制轉換">
-<meta property="article:tag" content="費氏數列">
-<meta property="article:tag" content="dp">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://xchichix.github.io/images/site-logo.png">
 <meta name="twitter:site" content="@db5nGez2VL9wHZj">
@@ -172,22 +169,22 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">a134: 00948 - Fibonaccimal Base</h1>
+                <h1 class="kratos-entry-title text-center">e507: 10252 - Common Permutation</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-01-31</li>
+                <li><i class="fa fa-calendar"></i> 2022-02-02</li>
                 <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~1.64K
+                        1127
                     
                     字
                 </li>
                 
-                    <li id="/2022/01/31/a134-00948/" class="leancloud_visitors" data-flag-title="a134: 00948 - Fibonaccimal Base">
+                    <li id="/2022/02/02/e507-10252/" class="leancloud_visitors" data-flag-title="e507: 10252 - Common Permutation">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次閱讀
                     </li>
@@ -197,7 +194,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1643632694836"></time> 前，其中的内容可能需要更新。
+                本文最後編輯於 <time datetime="1643794653471"></time> 前，其中的内容可能需要更新。
             </div>
             
                 <div class="kratos-post-inner-toc">
@@ -207,17 +204,16 @@
             <hr />
             <p>CPE 一顆星選集 49 道必考題</p>
 <span id="more"></span>
-<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=a134">https://zerojudge.tw/ShowProblem?problemid=a134</a></p>
-<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>給一組十進位數字，以費氏進位輸出(如下)。<br>17     =    1    0    0    1    0    1<br>13+3+1 =    13    8    5    3    2    1</p>
-<p>輸入的第一行含有一個數字 N，代表以下有幾個數字 ( 1 ≤ N ≤ 500)。<br>接下來有 N 行，每行有一個小於 100 000 000 的正整數。數字不一定按順序出現。</p>
-<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>10<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</p>
-<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>1 = 1 (fib)<br>2 = 10 (fib)<br>3 = 100 (fib)<br>4 = 101 (fib)<br>5 = 1000 (fib)<br>6 = 1001 (fib)<br>7 = 1010 (fib)<br>8 = 10000 (fib)<br>9 = 10001 (fib)<br>10 = 10010 (fib)</p>
-<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>先建一個足夠大的陣列存費氏數列，將陣列由大跑到小，如果小於輸入值，則更新。</p>
-<p>注意不可出現相鄰的1。</p>
+<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=e507">https://zerojudge.tw/ShowProblem?problemid=e507</a></p>
+<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>給定兩個由小寫字母組成的字串，印出兩字串共同擁有的字母(可重複)，按照字母順序排列。</p>
+<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>pretty<br>women<br>walking<br>down<br>the<br>street</p>
+<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>e<br>nw<br>et</p>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>使用兩個陣列分別計算兩字串字母出現次數，使 a 對應到 0 、 b 對應到 1 … z 對應到 25，設 wa 陣列表示 a 字串字母出現次數，則 wa[2] = 5 代表 c 在此字串中出現 5 次。</p>
+<p>最後由 0 (a) 掃到 25 (z)，檢查此字母是否同時在兩字串中出現，若是，則更新兩陣列數值，並且輸出此字母，直到其中一方為 0 ，接著檢查下一個字母，到 z 為止。</p>
 <div class="xControl">
     <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>程式碼</span></div>
     <div class="xContent"><div class="inner">
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    <span class="keyword">int</span> N, dp[<span class="number">41</span>], num;</span><br><span class="line">    <span class="keyword">bool</span> suc, beg;</span><br><span class="line">    cin &gt;&gt; N;</span><br><span class="line">    <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(dp));</span><br><span class="line">    dp[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    dp[<span class="number">1</span>] = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; <span class="number">41</span>; ++i)&#123;</span><br><span class="line">        dp[i] = dp[i - <span class="number">1</span>] + dp[i - <span class="number">2</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(N--)&#123;</span><br><span class="line">        cin &gt;&gt; num;</span><br><span class="line">        suc = <span class="literal">true</span>;</span><br><span class="line">        beg = <span class="literal">false</span>;</span><br><span class="line">        cout &lt;&lt; num &lt;&lt; <span class="string">&quot; = &quot;</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">40</span>; i &gt;= <span class="number">0</span>; --i)&#123;</span><br><span class="line">            <span class="keyword">if</span>(dp[i] &lt;= num)&#123;</span><br><span class="line">                beg = <span class="literal">true</span>;</span><br><span class="line">                <span class="keyword">if</span>(suc)&#123;</span><br><span class="line">                    num -= dp[i];</span><br><span class="line">                    cout &lt;&lt; <span class="number">1</span>;</span><br><span class="line">                    suc = <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    cout &lt;&lt; <span class="number">0</span>;</span><br><span class="line">                    suc = <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(beg)&#123;</span><br><span class="line">                cout &lt;&lt; <span class="number">0</span>;</span><br><span class="line">                suc = <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot; (fib)\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    string a, b;</span><br><span class="line">    <span class="keyword">int</span> wa[<span class="number">26</span>], wb[<span class="number">26</span>];</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; a &gt;&gt; b)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(wa, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(wa));</span><br><span class="line">        <span class="built_in">memset</span>(wb, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(wb));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.<span class="built_in">length</span>(); ++i) ++wa[a[i]-<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; b.<span class="built_in">length</span>(); ++i) ++wb[b[i]-<span class="string">&#x27;a&#x27;</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">26</span>; ++i)&#123;</span><br><span class="line">            <span class="keyword">while</span>(wa[i] != <span class="number">0</span> &amp;&amp; wb[i] != <span class="number">0</span>)&#123;</span><br><span class="line">                cout &lt;&lt; <span class="built_in"><span class="keyword">char</span></span>(i+<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">                --wa[i], --wb[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
     </div>
         </div>
@@ -227,10 +223,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/dp/" rel="tag">dp</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>, <a class="tag-none-link" href="/tags/%E8%B2%BB%E6%B0%8F%E6%95%B8%E5%88%97/" rel="tag">費氏數列</a>, <a class="tag-none-link" href="/tags/%E9%80%B2%E5%88%B6%E8%BD%89%E6%8F%9B/" rel="tag">進制轉換</a>
+                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-01-31</span>
+                <span>最後編輯：2022-02-02</span>
                 </div>
             </div>
         </footer>
@@ -239,12 +235,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" a132: 10931 - Parity" href="/2022/01/31/a132-10931/">&lt; 上一篇</a>
+                <a title=" d672: 10922 - 2 the 9s" href="/2022/02/02/d672-10922/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" a737: 10041 - Vito&#39;s family" href="/2022/01/31/a737-10041/">下一篇 &gt;</a>
+                <a title=" e510: 10056 - What is the Probability?" href="/2022/02/02/e510-10056/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -260,7 +256,7 @@
                 appKey: 'mj0E5PM13teH5lnkIr96ob0G',
                 visitor: true,
                 enableQQ: false,
-                path: '/2022/01/31/a134-00948/',
+                path: '/2022/02/02/e507-10252/',
                 meta: ['nick', 'mail'],
                 lang: 'zh-TW',
                 placeholder: 'starburst stream!!',
