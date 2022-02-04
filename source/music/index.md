@@ -1,14 +1,9 @@
 ---
 title: 音樂相關
-date: 2022-01-31 15:02:48
-tags: bgm
-categories: 置頂
-sticky: 100
-comments: true
-toc: true
+date: 2022-02-04 17:53:26
+path: music/index.md
+comments: false
 ---
-關於BGM
-<!--more-->
 ## Fade
 Song: Alan Walker - Fade
 Free Download / Stream: https://soundcloud.com/alanwalker/alan-walker-fade
