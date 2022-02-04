@@ -1,0 +1,865 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/site-logo.png">
+  <title>統計圖表 | XChiChiX</title>
+  <meta name="author" content="XChiChiX">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="format-detection" content="telphone=no, email=no">
+  
+    <meta name="keywords" content="">
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="統計圖表">
+<meta property="og:url" content="http://xchichix.github.io/charts/index.html">
+<meta property="og:site_name" content="XChiChiX">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
+<meta property="article:published_time" content="2022-02-04T15:05:26.000Z">
+<meta property="article:modified_time" content="2022-02-04T15:35:57.075Z">
+<meta property="article:author" content="XChiChiX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://xchichix.github.io/images/site-logo.png">
+<meta name="twitter:site" content="@db5nGez2VL9wHZj">
+  
+  <!-- 站点验证相关 -->
+  
+    
+      <meta name="google-site-verification" content="dC3goDG6FN50UOqD6MM1mVNvbMxlVe5rAdIupH_wn6g">
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.0.0"></head><style type="text/css">#posts-chart,#posts-calendar,#categories-chart,#categories-radar,#tags-chart{width: 100%;height: 300px;margin: 0.5rem auto;padding: 0.5rem;display: flex;}</style><script type="text/javascript" data-pjax="" src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/friends/"><i class="fa fa-heart"></i>好康的</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/charts/"><i class="fa fa-music"></i>統計</a></li>
+                                    
+                                
+                                    
+                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <a><i class="fa fa-link"></i>連結</a>
+                                            <ul class="sub-menu">
+                                                
+                                                    
+                                                
+                                                    
+                                                        <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">釣魚</a></li>
+                                                    
+                                                
+                                                    
+                                                        <li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">還是釣魚</a></li>
+                                                    
+                                                
+                                            </ul>
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">XChiChiX</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>XChiChiX</h2> <br>
+                        <span>這不是很戲劇化的發展嗎</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article>
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <div class="kratos-post-content">
+            <h2 class="title-h2 text-center">統計圖表</h2>
+             <div id="posts-calendar"></div>
+  <script id="postsCalendar" data-pjax="">
+    var color = '#6e7f98';
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let postsCalendar = echarts.init(document.getElementById('posts-calendar'));
+    let postsCalendarOption = {
+        title: {
+            top: 0,
+            text: '',
+            left: 'center',
+            textStyle: {
+                color: color
+            }
+        },
+        tooltip: {
+            padding: 10,
+            backgroundColor: '#555',
+            borderColor: '#777',
+            borderWidth: 1,
+            formatter: function (obj) {
+                var value = obj.value;
+                return '<div style="font-size: 14px;">' + value[0] + '<br/> ✒️文章 : ' + value[1] + '</div>';
+            }
+        },
+        visualMap: {
+            show: true,
+            showLabel: true,
+            categories: [0, 1, 2, 3, ">=4"],
+            calculable: true,
+            inRange: {
+                symbol: 'rect',
+                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
+            },
+            itemWidth: 12,
+            itemHeight: 12,
+            orient: 'horizontal',
+            left: 'center',
+            textStyle: {
+                color: color
+            },
+            bottom: 30
+        },
+        calendar: [{
+            top: 90,
+            right: 25,
+            range: ["2021-02-04", "2022-02-04"],
+            cellSize: [13, 13],
+            splitLine: {
+                show: false
+            },
+            itemStyle: {
+                color: color,
+                borderColor: '#fff',
+                borderWidth: 2
+            },
+            yearLabel: {
+                show: false
+            },
+            monthLabel: {
+                nameMap: 'cn',
+                fontSize: 11,
+                textStyle: {
+                    color: color
+                  }
+            },
+            dayLabel: {
+                formatter: '{start}  1st',
+                nameMap: ['', '周一', '', '周三', '', '周五', ''],
+                fontSize: 11,
+                textStyle: {
+                    color: color
+                  }
+            }
+        }],
+        series: [{
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 0,
+            data: [["2021-02-04", 0], ["2021-02-05", 0], ["2021-02-06", 0], ["2021-02-07", 0], ["2021-02-08", 0], ["2021-02-09", 0], ["2021-02-10", 0], ["2021-02-11", 0], ["2021-02-12", 0], ["2021-02-13", 0], ["2021-02-14", 0], ["2021-02-15", 0], ["2021-02-16", 0], ["2021-02-17", 0], ["2021-02-18", 0], ["2021-02-19", 0], ["2021-02-20", 0], ["2021-02-21", 0], ["2021-02-22", 0], ["2021-02-23", 0], ["2021-02-24", 0], ["2021-02-25", 0], ["2021-02-26", 0], ["2021-02-27", 0], ["2021-02-28", 0], ["2021-03-01", 0], ["2021-03-02", 0], ["2021-03-03", 0], ["2021-03-04", 0], ["2021-03-05", 0], ["2021-03-06", 0], ["2021-03-07", 0], ["2021-03-08", 0], ["2021-03-09", 0], ["2021-03-10", 0], ["2021-03-11", 0], ["2021-03-12", 0], ["2021-03-13", 0], ["2021-03-14", 0], ["2021-03-15", 0], ["2021-03-16", 0], ["2021-03-17", 0], ["2021-03-18", 0], ["2021-03-19", 0], ["2021-03-20", 0], ["2021-03-21", 0], ["2021-03-22", 0], ["2021-03-23", 0], ["2021-03-24", 0], ["2021-03-25", 0], ["2021-03-26", 0], ["2021-03-27", 0], ["2021-03-28", 0], ["2021-03-29", 0], ["2021-03-30", 0], ["2021-03-31", 0], ["2021-04-01", 0], ["2021-04-02", 0], ["2021-04-03", 0], ["2021-04-04", 0], ["2021-04-05", 0], ["2021-04-06", 0], ["2021-04-07", 0], ["2021-04-08", 0], ["2021-04-09", 0], ["2021-04-10", 0], ["2021-04-11", 0], ["2021-04-12", 0], ["2021-04-13", 0], ["2021-04-14", 0], ["2021-04-15", 0], ["2021-04-16", 0], ["2021-04-17", 0], ["2021-04-18", 0], ["2021-04-19", 0], ["2021-04-20", 0], ["2021-04-21", 0], ["2021-04-22", 0], ["2021-04-23", 0], ["2021-04-24", 0], ["2021-04-25", 0], ["2021-04-26", 0], ["2021-04-27", 0], ["2021-04-28", 0], ["2021-04-29", 0], ["2021-04-30", 0], ["2021-05-01", 0], ["2021-05-02", 0], ["2021-05-03", 0], ["2021-05-04", 0], ["2021-05-05", 0], ["2021-05-06", 0], ["2021-05-07", 0], ["2021-05-08", 0], ["2021-05-09", 0], ["2021-05-10", 0], ["2021-05-11", 0], ["2021-05-12", 0], ["2021-05-13", 0], ["2021-05-14", 0], ["2021-05-15", 0], ["2021-05-16", 0], ["2021-05-17", 0], ["2021-05-18", 0], ["2021-05-19", 0], ["2021-05-20", 0], ["2021-05-21", 0], ["2021-05-22", 0], ["2021-05-23", 0], ["2021-05-24", 0], ["2021-05-25", 0], ["2021-05-26", 0], ["2021-05-27", 0], ["2021-05-28", 0], ["2021-05-29", 0], ["2021-05-30", 0], ["2021-05-31", 0], ["2021-06-01", 0], ["2021-06-02", 0], ["2021-06-03", 0], ["2021-06-04", 0], ["2021-06-05", 0], ["2021-06-06", 0], ["2021-06-07", 0], ["2021-06-08", 0], ["2021-06-09", 0], ["2021-06-10", 0], ["2021-06-11", 0], ["2021-06-12", 0], ["2021-06-13", 0], ["2021-06-14", 0], ["2021-06-15", 0], ["2021-06-16", 0], ["2021-06-17", 0], ["2021-06-18", 0], ["2021-06-19", 0], ["2021-06-20", 0], ["2021-06-21", 0], ["2021-06-22", 0], ["2021-06-23", 0], ["2021-06-24", 0], ["2021-06-25", 0], ["2021-06-26", 0], ["2021-06-27", 0], ["2021-06-28", 0], ["2021-06-29", 0], ["2021-06-30", 0], ["2021-07-01", 0], ["2021-07-02", 0], ["2021-07-03", 0], ["2021-07-04", 0], ["2021-07-05", 0], ["2021-07-06", 0], ["2021-07-07", 0], ["2021-07-08", 0], ["2021-07-09", 0], ["2021-07-10", 0], ["2021-07-11", 0], ["2021-07-12", 0], ["2021-07-13", 0], ["2021-07-14", 0], ["2021-07-15", 0], ["2021-07-16", 0], ["2021-07-17", 0], ["2021-07-18", 0], ["2021-07-19", 0], ["2021-07-20", 0], ["2021-07-21", 0], ["2021-07-22", 0], ["2021-07-23", 0], ["2021-07-24", 0], ["2021-07-25", 0], ["2021-07-26", 0], ["2021-07-27", 0], ["2021-07-28", 0], ["2021-07-29", 0], ["2021-07-30", 0], ["2021-07-31", 0], ["2021-08-01", 0], ["2021-08-02", 0], ["2021-08-03", 0], ["2021-08-04", 0], ["2021-08-05", 0], ["2021-08-06", 0], ["2021-08-07", 0], ["2021-08-08", 0], ["2021-08-09", 0], ["2021-08-10", 0], ["2021-08-11", 0], ["2021-08-12", 0], ["2021-08-13", 0], ["2021-08-14", 0], ["2021-08-15", 0], ["2021-08-16", 0], ["2021-08-17", 0], ["2021-08-18", 0], ["2021-08-19", 0], ["2021-08-20", 0], ["2021-08-21", 0], ["2021-08-22", 0], ["2021-08-23", 0], ["2021-08-24", 0], ["2021-08-25", 0], ["2021-08-26", 0], ["2021-08-27", 0], ["2021-08-28", 0], ["2021-08-29", 0], ["2021-08-30", 0], ["2021-08-31", 0], ["2021-09-01", 0], ["2021-09-02", 0], ["2021-09-03", 0], ["2021-09-04", 0], ["2021-09-05", 0], ["2021-09-06", 0], ["2021-09-07", 0], ["2021-09-08", 0], ["2021-09-09", 0], ["2021-09-10", 0], ["2021-09-11", 0], ["2021-09-12", 0], ["2021-09-13", 0], ["2021-09-14", 0], ["2021-09-15", 0], ["2021-09-16", 0], ["2021-09-17", 0], ["2021-09-18", 0], ["2021-09-19", 0], ["2021-09-20", 0], ["2021-09-21", 0], ["2021-09-22", 0], ["2021-09-23", 0], ["2021-09-24", 0], ["2021-09-25", 0], ["2021-09-26", 0], ["2021-09-27", 0], ["2021-09-28", 0], ["2021-09-29", 0], ["2021-09-30", 0], ["2021-10-01", 0], ["2021-10-02", 0], ["2021-10-03", 0], ["2021-10-04", 0], ["2021-10-05", 0], ["2021-10-06", 0], ["2021-10-07", 0], ["2021-10-08", 0], ["2021-10-09", 0], ["2021-10-10", 0], ["2021-10-11", 0], ["2021-10-12", 0], ["2021-10-13", 0], ["2021-10-14", 0], ["2021-10-15", 0], ["2021-10-16", 0], ["2021-10-17", 0], ["2021-10-18", 0], ["2021-10-19", 0], ["2021-10-20", 0], ["2021-10-21", 0], ["2021-10-22", 0], ["2021-10-23", 0], ["2021-10-24", 0], ["2021-10-25", 0], ["2021-10-26", 0], ["2021-10-27", 0], ["2021-10-28", 0], ["2021-10-29", 0], ["2021-10-30", 0], ["2021-10-31", 0], ["2021-11-01", 0], ["2021-11-02", 0], ["2021-11-03", 0], ["2021-11-04", 0], ["2021-11-05", 0], ["2021-11-06", 0], ["2021-11-07", 0], ["2021-11-08", 0], ["2021-11-09", 0], ["2021-11-10", 0], ["2021-11-11", 0], ["2021-11-12", 0], ["2021-11-13", 0], ["2021-11-14", 0], ["2021-11-15", 0], ["2021-11-16", 0], ["2021-11-17", 0], ["2021-11-18", 0], ["2021-11-19", 0], ["2021-11-20", 0], ["2021-11-21", 0], ["2021-11-22", 0], ["2021-11-23", 0], ["2021-11-24", 0], ["2021-11-25", 0], ["2021-11-26", 0], ["2021-11-27", 0], ["2021-11-28", 0], ["2021-11-29", 0], ["2021-11-30", 0], ["2021-12-01", 0], ["2021-12-02", 0], ["2021-12-03", 0], ["2021-12-04", 0], ["2021-12-05", 0], ["2021-12-06", 0], ["2021-12-07", 0], ["2021-12-08", 0], ["2021-12-09", 0], ["2021-12-10", 0], ["2021-12-11", 0], ["2021-12-12", 0], ["2021-12-13", 0], ["2021-12-14", 0], ["2021-12-15", 0], ["2021-12-16", 0], ["2021-12-17", 0], ["2021-12-18", 0], ["2021-12-19", 0], ["2021-12-20", 0], ["2021-12-21", 0], ["2021-12-22", 0], ["2021-12-23", 0], ["2021-12-24", 0], ["2021-12-25", 0], ["2021-12-26", 0], ["2021-12-27", 0], ["2021-12-28", 0], ["2021-12-29", 0], ["2021-12-30", 0], ["2021-12-31", 0], ["2022-01-01", 0], ["2022-01-02", 0], ["2022-01-03", 0], ["2022-01-04", 0], ["2022-01-05", 0], ["2022-01-06", 0], ["2022-01-07", 0], ["2022-01-08", 0], ["2022-01-09", 0], ["2022-01-10", 0], ["2022-01-11", 0], ["2022-01-12", 0], ["2022-01-13", 0], ["2022-01-14", 0], ["2022-01-15", 0], ["2022-01-16", 0], ["2022-01-17", 0], ["2022-01-18", 0], ["2022-01-19", 0], ["2022-01-20", 0], ["2022-01-21", 0], ["2022-01-22", 0], ["2022-01-23", 0], ["2022-01-24", 0], ["2022-01-25", 0], ["2022-01-26", 0], ["2022-01-27", 0], ["2022-01-28", 0], ["2022-01-29", 1], ["2022-01-30", 1], ["2022-01-31", 10], ["2022-02-01", 14], ["2022-02-02", 7], ["2022-02-03", 4], ["2022-02-04", 6]]
+        }]
+    };
+    postsCalendar.setOption(postsCalendarOption);
+    </script> 
+
+ <div id="posts-chart"></div>
+  <script id="postsChart" data-pjax="">
+    var color = '#6e7f98';
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let postsChart = echarts.init(document.getElementById('posts-chart'));
+    let postsOption = {
+        title: {
+            text: '文章發佈統計',
+            top: -5,
+            x: 'center',
+            textStyle: {
+                color: color
+            }
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        xAxis: {
+            name: '日期',
+            type: 'category',
+            axisTick: {
+                show: false
+              },
+              axisLine: {
+                show: true,
+                lineStyle: {
+                  color: color
+                }
+              },
+              axisLabel: {
+                  interval:1,
+                  rotate:20
+               },
+            data: ["2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02"]
+        },
+        yAxis: {
+            name: '文章篇数',
+            type: 'value',
+            splitLine: {
+                show: false
+              },
+              axisTick: {
+                show: false
+              },
+              axisLine: {
+                show: true,
+                lineStyle: {
+                  color: color
+                }
+              }
+            },
+        series: [
+            {
+                // name: 'Number of Post',
+                name: '文章篇数',
+                type: 'line',
+                smooth: true,
+                lineStyle: {
+                    width: 0
+                },
+                showSymbol: false,
+                itemStyle: {
+                    opacity: 1,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                      offset: 0,
+                      color: 'rgba(128, 255, 165)'
+                    },
+                    {
+                      offset: 1,
+                      color: 'rgba(1, 191, 236)'
+                    }])
+                  },
+                  areaStyle: {
+                    opacity: 1,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                      offset: 0,
+                      color: 'rgba(128, 255, 165)'
+                    }, {
+                      offset: 1,
+                      color: 'rgba(1, 191, 236)'
+                    }])
+                  },
+                data: [0,0,0,0,0,0,0,0,0,0,0,12,31],
+                markLine: {
+                    itemStyle: {color: ['#ab47bc']},
+                    data: [
+                        {type: 'average', name: '平均值'}
+                    ]
+                }
+            }
+        ]
+    };
+    postsChart.setOption(postsOption);
+    window.addEventListener("resize", () => { 
+        postsChart.resize();
+      });
+    </script> 
+
+ <!--  "data-length" = 顯示多少個標籤，默認 10  -->
+<div id="tags-chart" data-length="10"></div>
+
+  <script id="tagsChart" data-pjax="">
+    var color = '#6e7f98';
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let tagsChart = echarts.init(document.getElementById('tags-chart'));
+    let tagsOption = {
+        title: {
+            text: 'Top 10 標籤統計',
+            top: -5,
+            textStyle: {
+                color: color
+              },
+            x: 'center'
+        },
+        tooltip: {
+            formatter: "{b} : {c}"
+        },
+        xAxis: {
+            name: '标签',
+            type: 'category',
+            axisTick: {
+                show: false
+              },
+              axisLine: {
+                show: true,
+                lineStyle: {
+                  color: color
+                }
+              },
+              axisLabel: {
+                  interval:1,
+                  rotate:20
+               },
+              grid: {
+                left: '10%',
+                bottom:'25%'
+                },
+            data: ["zerojudge","uva","cpe","進制轉換","模擬","sort","map","stack","dp","星爆"]
+        },
+        yAxis: {
+            name: '文章篇数',
+            type: 'value',
+            splitLine: {
+                show: false
+              },
+              axisTick: {
+                show: false
+              },
+              axisLine: {
+                show: true,
+                lineStyle: {
+                  color: color
+                }
+              }
+            },
+        series: [
+            {
+                name: '文章篇数',
+                type: 'bar',
+                color: ['#82d3f4'],
+                data: [40,38,38,5,5,4,3,2,2,1],
+                itemStyle: {
+                    opacity: 1,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                      offset: 0,
+                      color: 'rgba(128, 255, 165)'
+                    },
+                    {
+                      offset: 1,
+                      color: 'rgba(1, 191, 236)'
+                    }])
+                  },
+                  emphasis: {
+                    itemStyle: {
+                      opacity: 1,
+                      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(128, 255, 195)'
+                      },
+                      {
+                        offset: 1,
+                        color: 'rgba(1, 211, 255)'
+                      }])
+                    }
+                  },
+                markPoint: {
+                    symbolSize: 45,
+                    data: [{
+                        type: 'max',
+                        itemStyle: {color: ['#3ecf8e']},
+                        name: '最大值'
+                    }, {
+                        type: 'min',
+                        itemStyle: {color: ['#fa755a']},
+                        name: '最小值'
+                    }],
+                },
+                markLine: {
+                    itemStyle: {color: ['#ab47bc']},
+                    data: [
+                        {type: 'average', name: '平均值'}
+                    ]
+                }
+            }
+        ]
+    };
+    tagsChart.setOption(tagsOption);
+    </script> 
+
+<div id="categories-chart"></div>
+  <script id="categoriesChart" data-pjax="">
+    var color = '#6e7f98';
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
+    let categoriesOption = {
+        title: {
+            text: '',
+            top: 0,
+            x: 'center',
+            textStyle: {
+              color: color
+          }
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        series: [
+            {
+                // name: 'Category:',
+                name: '✒️文章篇数',
+                type: 'pie',
+                radius: '75%',
+                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
+                data: [{"name":"解題紀錄","value":40},{"name":"測試","value":2},{"name":"置頂","value":1}],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+    categoriesChart.setOption(categoriesOption);
+    </script> 
+
+<div id="categories-radar"></div>
+  <script id="categoriesRadar" data-pjax="">
+    var color = '#6e7f98';
+    var color = document.documentElement.getAttribute('data-theme') === 'light' ? '#4c4948' : '#afb8c5';
+    let categoriesRadar = echarts.init(document.getElementById('categories-radar'));
+    let categoriesRadarOption = {
+        title: {
+            left: 'center',
+            text: '',
+            textStyle: {
+                fontWeight: 500,
+                fontSize: 22,
+                color: color
+            }
+        },
+        tooltip: {},
+        radar: {
+            name: {
+                textStyle: {
+                    color: color
+                }
+            },
+            indicator: [{"name":"解題紀錄","max":41},{"name":"測試","max":41},{"name":"置頂","max":41}],
+            nameGap: 5,
+            center: ['50%','55%'],
+            radius: '75%',
+            left: 'center'
+        },
+        series: [{
+            type: 'radar',
+            color: ['#3ecf8e'],
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data : [
+                {
+                    value : [40,2,1],
+                    // name : 'Categories:'
+                    name: '✒️文章篇数'
+                }
+            ]
+        }]
+    };
+    categoriesRadar.setOption(categoriesRadarOption);
+    </script> 
+        </div>
+        <footer class="kratos-entry-footer clearfix">
+            <div class="footer-tag clearfix">
+                <div class="pull-date">
+                <span>最後編輯：2022-02-04</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <div id="v-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'kJ92p2VXBHIqxkvFq6qrezeQ-MdYXbMMI',
+                appKey: 'mj0E5PM13teH5lnkIr96ob0G',
+                visitor: true,
+                enableQQ: false,
+                path: '/charts/index.html',
+                meta: ['nick', 'mail'],
+                lang: 'zh-TW',
+                placeholder: 'starburst stream!!',
+                serverURLs: 'https://kj92p2vx.api.lncldglobal.com'
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = 'https://unpkg.com/valine@1.4.14/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/marin.gif">
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">はやく！もっとはやく！</p>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分類目錄</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%B8%AC%E8%A9%A6/">測試</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BD%AE%E9%A0%82/">置頂</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a><span class="category-list-count">40</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>很多標籤</h4>
+      <div class="tag-clouds">
+        <a href="/tags/cpe/" style="font-size: 0.77em;">cpe</a> <a href="/tags/dp/" style="font-size: 0.63em;">dp</a> <a href="/tags/map/" style="font-size: 0.67em;">map</a> <a href="/tags/queue/" style="font-size: 0.6em;">queue</a> <a href="/tags/sort/" style="font-size: 0.7em;">sort</a> <a href="/tags/stack/" style="font-size: 0.63em;">stack</a> <a href="/tags/uva/" style="font-size: 0.77em;">uva</a> <a href="/tags/zerojudge/" style="font-size: 0.8em;">zerojudge</a> <a href="/tags/%E6%97%A9%E4%B8%8A%E5%A5%BD/" style="font-size: 0.6em;">早上好</a> <a href="/tags/%E6%98%9F%E7%88%86/" style="font-size: 0.6em;">星爆</a> <a href="/tags/%E6%9E%9A%E8%88%89/" style="font-size: 0.6em;">枚舉</a> <a href="/tags/%E6%A8%A1%E6%93%AC/" style="font-size: 0.73em;">模擬</a> <a href="/tags/%E8%B2%BB%E6%B0%8F%E6%95%B8%E5%88%97/" style="font-size: 0.6em;">費氏數列</a> <a href="/tags/%E9%80%B2%E5%88%B6%E8%BD%89%E6%8F%9B/" style="font-size: 0.73em;">進制轉換</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2022/02/04/f444-10268/"><i class="fa  fa-book"></i> f444: 10268 - 498-bis</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/02/04/e606-10057/"><i class="fa  fa-book"></i> e606: 10057 - A mid-summer nights dream</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/02/04/e605-10189/"><i class="fa  fa-book"></i> e605: 10189 - Minesweeper</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/02/04/e579-10050/"><i class="fa  fa-book"></i> e579: 10050 - Hartals</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/02/04/e578-10222/"><i class="fa  fa-book"></i> e578: 10222 - Decode the Mad man</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer" class="ap-lrc">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://twitter.com/db5nGez2VL9wHZj"><i class="fa fa-twitter"></i></a></li>
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/XChiChiX"><i class="fa fa-github"></i></a></li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>© 2022 XChiChiX 版權所有.</li>
+                            <li>本站已運行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by XChiChiX.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer="" src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer="" src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async="" type="text/javascript" src="/js/snow.min.js"></script>
+    </div>
+
+
+    <script async="" src="/js/candy.min.js"></script>
+
+
+
+    <script defer="" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer="" src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <meting-js server="netease" type="playlist" id="945133400" order="random" fixed="true">
+    </meting-js>
+
+
+
+    <script defer="" src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer="" src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer="" src="/js/kratosr.min.js"></script>
+<script defer="" src="/js/pjax.min.js"></script>
+
+
+    <script defer="" src="/js/kr-dark.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics --><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
+
+<!-- Extra support for third-party plguins  -->
+
+
+    
+</body></html>
