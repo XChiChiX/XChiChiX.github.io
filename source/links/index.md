@@ -2,7 +2,7 @@
 title: 好康的
 date: 2022-02-05 23:53:09
 ---
-## 學程式
+## 資料結構&演算法
 <div class="linkpage">
     <ul id="friendsList1"></ul>
 </div>
@@ -120,3 +120,5 @@ date: 2022-02-05 23:53:09
     document.getElementById("friendsList3").innerHTML = friendNodes;
 }
 </script>
+
+{% youtube ac4d0NVh9Ms %}
