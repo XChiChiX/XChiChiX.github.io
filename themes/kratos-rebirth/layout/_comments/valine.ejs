@@ -6,12 +6,12 @@
                 el: '#v-comments',
                 appId: '<%- theme.valine.app_id %>',
                 appKey: '<%- theme.valine.app_key %>',
-                visitor: <%- theme.valine.visitor %>,
-                enableQQ: <%- theme.valine.enableQQ %>,
-                path: '<%- url_for(page.path) %>',
+                visitor: true,
+                enableQQ: false,
                 meta: ['nick', 'mail'],
                 lang: 'zh-TW',
-                placeholder: 'starburst stream!!',
+                avatar: 'mp',
+                placeholder: '上面可以都不填',
                 serverURLs: 'https://kj92p2vx.api.lncldglobal.com'
             });
         }

@@ -4,7 +4,12 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '<%- url_for(page.path) %>'
+                path: '<%- url_for(page.path) %>',
+                lang: 'zh-TW',
+                placeholder: '不用登錄也行',
+                meta: ['nick'],
+                mail: '信箱'
+
             }, JSON.parse('<%- JSON.stringify(theme.waline) %>')));
         }
         if (typeof Waline === 'undefined') {
