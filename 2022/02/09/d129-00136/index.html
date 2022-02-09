@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/site-logo.png">
-  <title>d206: 00108 - Maximum Sum | XChiChiX</title>
+  <title>d129: 00136 - Ugly Numbers | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,23 +13,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="cpe, dp, uva, zerojudge" />
+    <meta name="keywords" content="cpe, set, uva, zerojudge" />
   
-  <meta name="description" content="CPE 一顆星(騙人的吧)">
+  <meta name="description" content="CPE 一顆星">
 <meta property="og:type" content="article">
-<meta property="og:title" content="d206: 00108 - Maximum Sum">
-<meta property="og:url" content="http://xchichix.github.io/2022/02/08/d206-00108/index.html">
+<meta property="og:title" content="d129: 00136 - Ugly Numbers">
+<meta property="og:url" content="http://xchichix.github.io/2022/02/09/d129-00136/index.html">
 <meta property="og:site_name" content="XChiChiX">
-<meta property="og:description" content="CPE 一顆星(騙人的吧)">
+<meta property="og:description" content="CPE 一顆星">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
-<meta property="article:published_time" content="2022-02-08T11:49:01.000Z">
-<meta property="article:modified_time" content="2022-02-08T12:51:47.239Z">
+<meta property="article:published_time" content="2022-02-09T02:41:07.000Z">
+<meta property="article:modified_time" content="2022-02-09T03:08:16.436Z">
 <meta property="article:author" content="XChiChiX">
 <meta property="article:tag" content="zerojudge">
 <meta property="article:tag" content="uva">
 <meta property="article:tag" content="cpe">
-<meta property="article:tag" content="dp">
+<meta property="article:tag" content="set">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://xchichix.github.io/images/site-logo.png">
 <meta name="twitter:site" content="@db5nGez2VL9wHZj">
@@ -182,29 +182,29 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">d206: 00108 - Maximum Sum</h1>
+                <h1 class="kratos-entry-title text-center">d129: 00136 - Ugly Numbers</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-02-08</li>
+                <li><i class="fa fa-calendar"></i> 2022-02-09</li>
                 <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.31K
+                        1273
                     
                     字
                 </li>
                 
-                    <li id="/2022/02/08/d206-00108/" class="leancloud_visitors" data-flag-title="d206: 00108 - Maximum Sum">
+                    <li id="/2022/02/09/d129-00136/" class="leancloud_visitors" data-flag-title="d129: 00136 - Ugly Numbers">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次閱讀
                     </li>
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-xid="/2022/02/08/d206-00108/" class="waline-comment-count"> </span> 則評論
+                            <span data-xid="/2022/02/09/d129-00136/" class="waline-comment-count"> </span> 則評論
                         </li>
                     
                 
@@ -212,7 +212,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1644324707239"></time> 前，其中的内容可能需要更新。
+                本文最後編輯於 <time datetime="1644376096436"></time> 前，其中的内容可能需要更新。
             </div>
             
                 <div class="kratos-post-inner-toc">
@@ -220,37 +220,23 @@
                 </div>
             
             <hr />
-            <p>CPE 一顆星(騙人的吧)</p>
+            <p>CPE 一顆星</p>
 <span id="more"></span>
-<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=d206">https://zerojudge.tw/ShowProblem?problemid=d206</a></p>
-<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>給你一個 N*N 的陣列，請你找出有最大和的子區域 (sub-rectangle)其和為多少。一個區域的和指的是該區域中所有元素值的和。一個區域是指相連的任意大小的子陣列。範例：<br>   0 -2  -7   0<br>   9  2  -6   2<br>  -4  1  -4   1<br>  -1  8   0  -2</p>
-<p>最大子區域：<br>   9  2<br>  -4  1<br>  -1  8</p>
-<p>→15</p>
-<p>每筆測資第一列 N (N &lt;= 100)，接著有 N*N 個數字代表此陣列，EOF結束。<br>輸入很醜，但是C/C++沒差。</p>
-<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>4<br>0  -2  -7   0  9  2<br>-6   2  -4<br>1  -4   1  -1  8   0<br>-2 10 9 116 24 -121 30 14 2 119 122 28 -53 125 -71 87 -57 42 -111 125<br>-33 91 -121 30 -28 1 -16 97 -11 68 -24 103 -126 98 -61 33 48 109<br>-88 67 -72 77 -107 95 -78 23 -86 45 -4 28 -121 73 -57 20 -122 9<br>68 -97 79 -68 122 -42 88 -22 0 -116 55 -44 68 -109 43 -32 103 -54<br>122 -41 62 -114 113 -32 29 -22 99 -11 38 -60 88 -83 28 -83 122 -56<br>100 -86 63 -49 111 -77 91 -88 69 -110</p>
-<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>15<br>963</p>
-<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>把陣列分成 N*j 來看(j為1~N)<br>像是4*4陣列<br>0 -2  -7   0<br>9  2  -6   2<br>-4  1  -4   1<br>-1  8   0  -2<br>將其拆成<br>4*1</p>
-<p>0<br>9<br>-4<br>-1</p>
-<p>-2<br>2<br>1<br>8</p>
-<p>-7<br>-6<br>-4<br>0</p>
-<p>0<br>2<br>1<br>-2</p>
-<p>4*2</p>
-<p>0 -2<br>9 2<br>-4 1<br>-1 8</p>
-<p>-2 -7<br>2 -6<br>1 -4<br>8 0</p>
-<p>-7 0<br>-6 2<br>-4 1<br>0 -2</p>
-<p>4*3，4*4 同上方法。</p>
-<p>並合併成一維數列<br>像是<br>-7 0<br>-6 2<br>-4 1<br>0 -2<br>變成<br>-7<br>-4<br>-3<br>-2<br>之後分別計算這些子陣列的最大連續子序列(一數列的最大區間和)，最大值即為所求。</p>
-<p>為了方便操作，若輸入為<br>0 -2  -7   0<br>9  2  -6   2<br>-4  1  -4   1<br>-1  8   0  -2<br>可以將其儲存成<br>0 0   0  0   0<br>0 0  -2 -9  -9<br>0 9  11  5   7<br>0 -4 -3 -7  -6<br>0 -1  7  7   5<br>那麼</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; ++i)</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= <span class="number">4</span>; ++j)</span><br></pre></td></tr></table></figure>
-<p>把 i, j 當行來看(直的)，就可以將上面所有的一維數列都考慮進去，裡面再加一個迴圈進行最大連續子序列運算即可。</p>
+<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>Ugly Number的定義為：該數之質因數必須為 2, 3 或 5<br>當然了，依照慣例，1 也算是 Ugly Number。<br>在此列舉一串數列：<br>1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15<br>這些就是前 11 個 Ugly Numbers。<br>請寫一個程式求出第1500個Ugly Number。</p>
+<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>No input</p>
+<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>The 1500’th ugly number is <number>.</p>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>依序拿每個已知的 Ugly Number 去乘上2, 3, 5產生新的 Ugly Number。</p>
+<p>從1開始，得到2, 3, 5，此時已知為1, 2, 3, 5。<br>接著拿2來乘，得到4, 6, 10，此時已知為1, 2, 3, 4, 5, 6, 10。<br>接著拿3，得到6, 9, 15，此時已知為1, 2, 3, 4, 5, 6, 9, 10, 15。<br>接著拿4，得到8, 12, 20，此時已知為1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 20。<br>以此類推，直到產生第1500個 Ugly Number。</p>
+<p>但是可能會遇到產生數字重覆的情況，像是拿2跟拿3來乘，6重複了。<br>以及數字大小順序問題，像是4產生的8比3產生的9, 15 還小。</p>
+<p>此時可以運用 set 特性，不重複儲存相同的數，以及默認由小到大排列，即可解決問題。</p>
+<p>使用 begin() 函數得到 set 內第一個元素，產生完新的數後可直接用 erase() 刪除，使得下一次使用 begin() 時為下一個數，紀錄刪了幾個數即可。</p>
+<p><a href="/2022/02/07/%E9%9B%86%E5%90%88/">C++ STL: Set</a></p>
 <h2 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h2><div class="xControl">
     <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>C++</span></div>
     <div class="xContent"><div class="inner">
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    <span class="keyword">int</span> N, dp[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; N)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(<span class="number">0</span>));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= N; ++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= N; ++j)&#123;</span><br><span class="line">                cin &gt;&gt; dp[i][j];</span><br><span class="line">                dp[i][j] += dp[i][j<span class="number">-1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> mxn = INT_MIN, count;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; N; ++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt;= N; ++j)&#123;</span><br><span class="line">                count = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= N; ++k)&#123;</span><br><span class="line">                    count = <span class="built_in">max</span>(count+dp[k][j]-dp[k][i], dp[k][j]-dp[k][i]);</span><br><span class="line">                    mxn = <span class="built_in">max</span>(mxn, count);</span><br><span class="line">                    <span class="keyword">if</span>(count &lt; <span class="number">0</span>) count = <span class="number">0</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; mxn &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num[] = &#123;<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>&#125;, c = <span class="number">0</span>;</span><br><span class="line">    set&lt;<span class="keyword">long</span> <span class="keyword">long</span>&gt; myset;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> temp;</span><br><span class="line">    myset.<span class="built_in">insert</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="number">1500</span>)&#123;</span><br><span class="line">        <span class="keyword">auto</span> it = myset.<span class="built_in">begin</span>();</span><br><span class="line">        temp = *it;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; ++i)&#123;</span><br><span class="line">            myset.<span class="built_in">insert</span>(temp*num[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        myset.<span class="built_in">erase</span>(temp);</span><br><span class="line">        ++c;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;The 1500&#x27;th ugly number is &quot;</span> &lt;&lt; temp &lt;&lt; <span class="string">&quot;.\n&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
     </div>
-<p>參考資料:<a target="_blank" rel="noopener" href="https://home.gamer.com.tw/creationDetail.php?sn=4554031">inversion大神的小屋</a></p>
-
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -258,10 +244,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/dp/" rel="tag">dp</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>
+                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/set/" rel="tag">set</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-02-08</span>
+                <span>最後編輯：2022-02-09</span>
                 </div>
             </div>
         </footer>
@@ -270,12 +256,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" C++ STL: Set" href="/2022/02/07/集合/">&lt; 上一篇</a>
+                <a title=" d206: 00108 - Maximum Sum" href="/2022/02/08/d206-00108/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" d129: 00136 - Ugly Numbers" href="/2022/02/09/d129-00136/">下一篇 &gt;</a>
+                <a title=" UVA-10093: An Easy Problem!" href="/2022/02/09/UVA-10093/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -287,7 +273,7 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/2022/02/08/d206-00108/',
+                path: '/2022/02/09/d129-00136/',
                 lang: 'zh-TW',
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
