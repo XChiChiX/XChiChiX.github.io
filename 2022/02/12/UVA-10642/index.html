@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/site-logo.png">
-  <title>c039: 00100 - The 3n + 1 problem | XChiChiX</title>
+  <title>UVA-10642: Can You Solve It? | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,23 +13,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="cpe, stack, uva, zerojudge" />
+    <meta name="keywords" content="cpe, uva" />
   
   <meta name="description" content="CPE 一顆星選集 49 道必考題">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c039: 00100 - The 3n + 1 problem">
-<meta property="og:url" content="http://xchichix.github.io/2022/02/01/c039-00100/index.html">
+<meta property="og:title" content="UVA-10642: Can You Solve It?">
+<meta property="og:url" content="http://xchichix.github.io/2022/02/12/UVA-10642/index.html">
 <meta property="og:site_name" content="XChiChiX">
 <meta property="og:description" content="CPE 一顆星選集 49 道必考題">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
-<meta property="article:published_time" content="2022-02-01T03:46:28.000Z">
-<meta property="article:modified_time" content="2022-02-05T03:19:22.529Z">
+<meta property="article:published_time" content="2022-02-12T03:54:44.000Z">
+<meta property="article:modified_time" content="2022-02-12T04:28:11.276Z">
 <meta property="article:author" content="XChiChiX">
-<meta property="article:tag" content="zerojudge">
 <meta property="article:tag" content="uva">
 <meta property="article:tag" content="cpe">
-<meta property="article:tag" content="stack">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://xchichix.github.io/images/site-logo.png">
 <meta name="twitter:site" content="@db5nGez2VL9wHZj">
@@ -182,29 +180,29 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">c039: 00100 - The 3n + 1 problem</h1>
+                <h1 class="kratos-entry-title text-center">UVA-10642: Can You Solve It?</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-02-01</li>
+                <li><i class="fa fa-calendar"></i> 2022-02-12</li>
                 <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.05K
+                        1353
                     
                     字
                 </li>
                 
-                    <li id="/2022/02/01/c039-00100/" class="leancloud_visitors" data-flag-title="c039: 00100 - The 3n + 1 problem">
+                    <li id="/2022/02/12/UVA-10642/" class="leancloud_visitors" data-flag-title="UVA-10642: Can You Solve It?">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次閱讀
                     </li>
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-xid="/2022/02/01/c039-00100/" class="waline-comment-count"> </span> 則評論
+                            <span data-xid="/2022/02/12/UVA-10642/" class="waline-comment-count"> </span> 則評論
                         </li>
                     
                 
@@ -212,7 +210,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1644031162529"></time> 前，其中的内容可能需要更新。
+                本文最後編輯於 <time datetime="1644640091276"></time> 前，其中的内容可能需要更新。
             </div>
             
                 <div class="kratos-post-inner-toc">
@@ -222,55 +220,22 @@
             <hr />
             <p>CPE 一顆星選集 49 道必考題</p>
 <span id="more"></span>
-<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c039">https://zerojudge.tw/ShowProblem?problemid=c039</a></p>
-<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>考慮以下的演算法：</p>
-<p>1.         輸入 n<br>2.         印出 n<br>3.         如果 n = 1 結束<br>4.         如果 n 是奇數 那麼 n=3*n+1<br>5.         否則 n=n/2<br>6.         GOTO 2<br>例如輸入 22, 得到的數列： 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 </p>
-<p>此數列的長度稱為 cycle-length。上面提到的例子, 22 的 cycle length為 16.</p>
-<p>給定兩個整數 i, j (0 &lt; i, j &lt; 1000000)，輸出介於 i, j 之間的數所產生的數列中最大的cycle length 。</p>
-<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>1 10<br>10 1<br>100 200<br>201 210<br>900 1000</p>
-<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>1 10 20<br>10 1 20<br>100 200 125<br>201 210 89<br>900 1000 174</p>
-<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p><code>輸入 22, 得到的數列： 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1</code><br>可以發現計算一數的 cycle-length 時可以順便得到其他數的 cycle-length</p>
-<table>
-<thead>
-<tr>
-<th>num</th>
-<th>cycle-length</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>22</td>
-<td>16</td>
-</tr>
-<tr>
-<td>11</td>
-<td>15</td>
-</tr>
-<tr>
-<td>34</td>
-<td>14</td>
-</tr>
-<tr>
-<td>17</td>
-<td>13</td>
-</tr>
-<tr>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<p>從大的數開始算，並將過程中的數也記錄下來，之後遇到就不用重複算，節省時間。</p>
+<p>題目連結:<a target="_blank" rel="noopener" href="https://onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=1583">https://onlinejudge.org/index.php?option=com_onlinejudge&amp;Itemid=8&amp;page=show_problem&amp;problem=1583</a></p>
+<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p><img src="https://raw.githubusercontent.com/XChiChiX/images/main/img/UVA-10642.png"><br>給定兩座標(y, x)，求出從一點走到另一點所需的步數。</p>
+<p>輸入第一列 n (0 &lt; n &lt;= 500) 代表測資數，接著為兩點座標(0 &lt;= y, x &lt;= 100000)。</p>
+<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>3<br>0 0 0 1<br>0 0 1 0<br>0 0 0 2</p>
+<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>Case 1: 1<br>Case 2: 2<br>Case 3: 3</p>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>觀察後發現，如果從 (0, 0) 開始，到(0, x) 的步數為<br>到 (0, 1) = 1<br>到 (0, 2) = 3<br>到 (0, 3) = 6<br>到 (0, 4) = 10</p>
+<p>因此可以先將 y = 0 的點到 (0, 0) 的步數用陣列存起來</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">100001</span>; ++i) mp[i] = mp[i<span class="number">-1</span>] + i;</span><br></pre></td></tr></table></figure>
+<p>接著繼續觀察後發現，可以按照 y + x 的值來分組<br>y + x = 1<br>(0, 1) = 1<br>(1, 0) = 2</p>
+<p>y + x = 2<br>(0, 2) = 3<br>(1, 1) = 4<br>(2, 0) = 5</p>
+<p>y + x = 3<br>(0, 3) = 6<br>(1, 2) = 7<br>(2, 1) = 8<br>(3, 0) = 9</p>
+<p>經由上述觀察，可以先找出此座標的組別(y + x 的值)，接著利用已知的(0, x)步數 + 座標的 y 值，得到此座標到原點的步數，兩座標到原點的步數相減即為所求。</p>
 <h2 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h2><div class="xControl">
     <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>C++</span></div>
     <div class="xContent"><div class="inner">
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mxn 1000000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> cycle_len[mxn];</span><br><span class="line"><span class="keyword">bool</span> vis[mxn];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    stack&lt;<span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span>&gt; sta;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> temp, c, num;</span><br><span class="line">    cycle_len[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    vis[<span class="number">1</span>] = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = mxn - <span class="number">1</span>; i &gt; <span class="number">0</span>; --i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!vis[i])&#123;</span><br><span class="line">            temp = i;</span><br><span class="line">            <span class="keyword">while</span>(temp != <span class="number">1</span>)&#123;</span><br><span class="line">                sta.<span class="built_in">push</span>(temp);</span><br><span class="line">                <span class="keyword">if</span>(temp &amp; <span class="number">1</span>) temp = <span class="number">3</span> * temp + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> temp &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            c = <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">while</span>(!sta.<span class="built_in">empty</span>())&#123;</span><br><span class="line">                num = sta.<span class="built_in">top</span>();</span><br><span class="line">                sta.<span class="built_in">pop</span>();</span><br><span class="line">                <span class="keyword">if</span>(num &lt; mxn)&#123;</span><br><span class="line">                    vis[num] = <span class="literal">true</span>;</span><br><span class="line">                    cycle_len[num] = c;</span><br><span class="line">                &#125;</span><br><span class="line">                ++c;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> s, e;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">int</span> mx;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; s)&#123;</span><br><span class="line">        cin &gt;&gt; e;</span><br><span class="line">        mx = <span class="number">-50</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="built_in">min</span>(s, e); i &lt;= <span class="built_in">max</span>(s, e); ++i)&#123;</span><br><span class="line">            mx = <span class="built_in">max</span>(mx, cycle_len[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; s &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; e &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; mx &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    <span class="keyword">int</span> n, y1, x1, y2, x2, mp[<span class="number">100001</span>];</span><br><span class="line">    mp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">100001</span>; ++i) mp[i] = mp[i<span class="number">-1</span>] + i;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> c = <span class="number">1</span>; c &lt;= n; ++c)&#123;</span><br><span class="line">        cin &gt;&gt; y1 &gt;&gt; x1 &gt;&gt; y2 &gt;&gt; x2;</span><br><span class="line">        <span class="keyword">int</span> step1 = mp[y1+x1] + y1, step2 = mp[y2+x2] + y2;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Case &quot;</span> &lt;&lt; c &lt;&lt; <span class="string">&quot;: &quot;</span> &lt;&lt; step2 - step1 &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
     </div>
         </div>
@@ -280,10 +245,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/stack/" rel="tag">stack</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>
+                    <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-02-05</span>
+                <span>最後編輯：2022-02-12</span>
                 </div>
             </div>
         </footer>
@@ -292,12 +257,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" c022: 10783 - Odd Sum" href="/2022/02/01/c022-10783/">&lt; 上一篇</a>
+                <a title=" UVA-10221: Satellites" href="/2022/02/11/UVA-10221/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" c044: 10008 - What&#39;s Cryptanalysis" href="/2022/02/01/c044-10008/">下一篇 &gt;</a>
+                <a title=" UVA-11005: Cheapest Base" href="/2022/02/12/UVA-11005/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -309,7 +274,7 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/2022/02/01/c039-00100/',
+                path: '/2022/02/12/UVA-10642/',
                 lang: 'zh-TW',
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
