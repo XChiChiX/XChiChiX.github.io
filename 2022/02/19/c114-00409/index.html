@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/site-logo.png">
-  <title>c813: 11332 - Summing Digits | XChiChiX</title>
+  <title>c114: 00409 - Excuses, Excuses! | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="cpe, uva, zerojudge" />
   
-  <meta name="description" content="CPE 一顆星選集 49 道必考題">
+  <meta name="description" content="CPE 一顆星">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c813: 11332 - Summing Digits">
-<meta property="og:url" content="http://xchichix.github.io/2022/02/05/c813-11332/index.html">
+<meta property="og:title" content="c114: 00409 - Excuses, Excuses!">
+<meta property="og:url" content="http://xchichix.github.io/2022/02/19/c114-00409/index.html">
 <meta property="og:site_name" content="XChiChiX">
-<meta property="og:description" content="CPE 一顆星選集 49 道必考題">
+<meta property="og:description" content="CPE 一顆星">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
-<meta property="article:published_time" content="2022-02-05T07:15:27.000Z">
-<meta property="article:modified_time" content="2022-02-05T07:21:51.917Z">
+<meta property="article:published_time" content="2022-02-19T02:12:06.000Z">
+<meta property="article:modified_time" content="2022-02-19T02:28:19.886Z">
 <meta property="article:author" content="XChiChiX">
 <meta property="article:tag" content="zerojudge">
 <meta property="article:tag" content="uva">
@@ -181,29 +181,29 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">c813: 11332 - Summing Digits</h1>
+                <h1 class="kratos-entry-title text-center">c114: 00409 - Excuses, Excuses!</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-02-05</li>
+                <li><i class="fa fa-calendar"></i> 2022-02-19</li>
                 <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
                     
-                        811
+                        ~2.55K
                     
                     字
                 </li>
                 
-                    <li id="/2022/02/05/c813-11332/" class="leancloud_visitors" data-flag-title="c813: 11332 - Summing Digits">
+                    <li id="/2022/02/19/c114-00409/" class="leancloud_visitors" data-flag-title="c114: 00409 - Excuses, Excuses!">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次閱讀
                     </li>
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-xid="/2022/02/05/c813-11332/" class="waline-comment-count"> </span> 則評論
+                            <span data-xid="/2022/02/19/c114-00409/" class="waline-comment-count"> </span> 則評論
                         </li>
                     
                 
@@ -211,7 +211,7 @@
         </header>
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1644045711917"></time> 前，其中的内容可能需要更新。
+                本文最後編輯於 <time datetime="1645237699886"></time> 前，其中的内容可能需要更新。
             </div>
             
                 <div class="kratos-post-inner-toc">
@@ -219,22 +219,19 @@
                 </div>
             
             <hr />
-            <p>CPE 一顆星選集 49 道必考題</p>
+            <p>CPE 一顆星</p>
 <span id="more"></span>
-<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c813">https://zerojudge.tw/ShowProblem?problemid=c813</a></p>
-<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>對於所有正整數 n ，我們定義一函數 f(n) 為 n  的每一個十進位數字的總和，若再把 f(n) 代入函數中可得最到 n,f(n),f(f(n)),f(f(f(n)))… 最後得到僅有一位數字的值，並定義該值為 g(n) 。</p>
-<p>例如，當  n=1234567892 ，則：</p>
-<p> f(n)=1+2+3+4+5+6+7+8+9+2=47<br> f(f(n))=4+7=11<br> f(f(f(n)))=1+1=2 </p>
-<p>所以， g(1234567892)=2 。</p>
-<p>給定一個整數 n (0 &lt; n &lt;= 2*10^9)，輸出 g(n)。</p>
-<p>n = 0 代表結束。</p>
-<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>2<br>11<br>47<br>1234567892<br>0</p>
-<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>2<br>2<br>2<br>2</p>
-<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>跟找 n 除以 9 的餘數差不多，差別只在於若整除則輸出 9 。</p>
+<p>題目連結:<a target="_blank" rel="noopener" href="https://zerojudge.tw/ShowProblem?problemid=c114">https://zerojudge.tw/ShowProblem?problemid=c114</a></p>
+<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>給定多個關鍵字以及若干字串，求出包含最多關鍵字的字串。</p>
+<p>每筆測資第一列第一個數字 K (1 &lt;= K &lt;= 20) 代表關鍵字數量，第二個數字 E (1 &lt;= E &lt;= 20) 代表字串數量。接著為關鍵字和字串。</p>
+<h2 id="範例輸入"><a href="#範例輸入" class="headerlink" title="範例輸入"></a>範例輸入</h2><p>5 3<br>dog<br>ate<br>homework<br>canary<br>died<br>My dog ate my homework.<br>Can you believe my dog died after eating my canary… AND MY HOMEWORK?<br>This excuse is so good that it contain 0 keywords.<br>6 5<br>superhighway<br>crazy<br>thermonuclear<br>bedroom<br>war<br>building<br>I am having a superhighway built in my bedroom.<br>I am actually crazy.<br>1234567890…..,,,,,0987654321?????!!!!!!<br>There was a thermonuclear war!<br>I ate my dog, my canary, and my homework … note outdated keywords?</p>
+<h2 id="範例輸出"><a href="#範例輸出" class="headerlink" title="範例輸出"></a>範例輸出</h2><p>Excuse Set #1<br>Can you believe my dog died after eating my canary… AND MY HOMEWORK?</p>
+<p>Excuse Set #2<br>I am having a superhighway built in my bedroom.<br>There was a thermonuclear war!</p>
+<h2 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h2><p>先將字串中非英文字母的字元轉成空白，英文字母則轉成小寫，利用 stringstream 將字串內的單字一個一個抓出來跟關鍵字比對，並記錄次數，最後輸出最多關鍵字的字串即可。</p>
 <h2 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h2><div class="xControl">
     <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>C++</span></div>
     <div class="xContent"><div class="inner">
-        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; n &amp;&amp; n)&#123;</span><br><span class="line">        <span class="keyword">if</span>(n % <span class="number">9</span> == <span class="number">0</span>) cout &lt;&lt; <span class="number">9</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">else</span> cout &lt;&lt; n%<span class="number">9</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
+        <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fastio ios_base::sync_with_stdio(false), cin.tie(nullptr)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    fastio;</span><br><span class="line">    <span class="keyword">int</span> K, E, mxn, time[<span class="number">20</span>], c = <span class="number">0</span>;</span><br><span class="line">    string key[<span class="number">20</span>], s[<span class="number">20</span>], temp, s1;</span><br><span class="line">    stringstream ss;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; K &gt;&gt; E)&#123;</span><br><span class="line">        mxn = <span class="number">-50</span>;</span><br><span class="line">        <span class="built_in">memset</span>(time, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(time));</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; K; ++i) cin &gt;&gt; key[i] &gt;&gt; ws;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; E; ++i)&#123;</span><br><span class="line">            <span class="built_in">getline</span>(cin, s[i]);</span><br><span class="line">            s1 = s[i];</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; s1.<span class="built_in">length</span>(); ++j)&#123;</span><br><span class="line">                <span class="keyword">if</span>(<span class="built_in">isalpha</span>(s1[j]))&#123;</span><br><span class="line">                    <span class="keyword">if</span>(<span class="built_in">isupper</span>(s1[j]))&#123;</span><br><span class="line">                        s1[j] = <span class="built_in">tolower</span>(s1[j]);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    s1[j] = <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ss &lt;&lt; s1;</span><br><span class="line">            <span class="keyword">while</span>(ss &gt;&gt; temp)&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; K; ++j)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(temp == key[j])&#123;</span><br><span class="line">                        ++time[i];</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            mxn = <span class="built_in">max</span>(time[i], mxn);</span><br><span class="line">            ss.<span class="built_in">str</span>(<span class="string">&quot;&quot;</span>), ss.<span class="built_in">clear</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Excuse Set #&quot;</span> &lt;&lt; ++c &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; K; ++i)&#123;</span><br><span class="line">            <span class="keyword">if</span>(time[i] == mxn)&#123;</span><br><span class="line">                cout &lt;&lt; s[i] &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
     </div>
         </div>
@@ -247,7 +244,7 @@
                     <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a>, <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a>, <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-02-05</span>
+                <span>最後編輯：2022-02-19</span>
                 </div>
             </div>
         </footer>
@@ -256,13 +253,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" d750: 11321 - Sort! Sort!! and Sort!!!" href="/2022/02/05/d750-11321/">&lt; 上一篇</a>
+                <a title=" e543: 00401 - Palindromes" href="/2022/02/18/e543-00401/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" e513: 11349 - Symmetric Matrix" href="/2022/02/05/e513-11349/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -273,7 +266,7 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/2022/02/05/c813-11332/',
+                path: '/2022/02/19/c114-00409/',
                 lang: 'zh-TW',
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
