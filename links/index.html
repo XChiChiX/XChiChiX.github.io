@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>好康的 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -39,25 +40,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -89,50 +91,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -174,11 +179,12 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/links/index.html">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <h2 class="title-h2 text-center">好康的</h2>
-            <h2 id="資料結構-amp-演算法"><a href="#資料結構-amp-演算法" class="headerlink" title="資料結構&amp;演算法"></a>資料結構&amp;演算法</h2><div class="linkpage">
+            <h2 class="title-h2 text-center" itemprop="name headline">好康的</h2>
+            <div itemprop="articleBody"><h2 id="資料結構-amp-演算法"><a href="#資料結構-amp-演算法" class="headerlink" title="資料結構&amp;演算法"></a>資料結構&amp;演算法</h2><div class="linkpage">
     <ul id="friendsList1"></ul>
 </div>
 
@@ -292,16 +298,17 @@
 }
 </script>
 
-<div class="video-container"><iframe src="https://www.youtube.com/embed/ac4d0NVh9Ms" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/ac4d0NVh9Ms" frameborder="0" loading="lazy" allowfullscreen></iframe></div></div>
         </div>
         <footer class="kratos-entry-footer clearfix">
             <div class="footer-tag clearfix">
                 <div class="pull-date">
-                <span>最後編輯：2022-02-06</span>
+                    <time datetime="2022-02-06T10:13:52.400Z" itemprop="dateModified">最後編輯：2022-02-06</time>
                 </div>
             </div>
         </footer>
     </div>
+    
     
         <div id="w-comments" class="post-comments"></div>
 <script>
@@ -314,11 +321,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -347,11 +353,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -626,9 +658,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -639,8 +668,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -654,9 +683,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -668,14 +697,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

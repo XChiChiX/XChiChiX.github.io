@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>大神教ㄇ | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,12 +16,12 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="{     const flist &#x3D; JSON.parse(&#96;[{&quot;name&quot;:&quot;測試1&quot;,&quot;bio&quot;:&quot;星爆&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avatar.webp&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9WgXcQ&quot;},{&quot;name&quot;:&quot;測試2&quot;,&quot;bio&quot;:&quot;氣流&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avata">
+  <meta name="description" content="{     const flist &#x3D; [{&quot;name&quot;:&quot;測試1&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9WgXcQ&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avatar.webp&quot;,&quot;bio&quot;:&quot;星爆&quot;},{&quot;name&quot;:&quot;測試2&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9">
 <meta property="og:type" content="website">
 <meta property="og:title" content="大神教ㄇ">
 <meta property="og:url" content="http://xchichix.github.io/friends/index.html">
 <meta property="og:site_name" content="XChiChiX">
-<meta property="og:description" content="{     const flist &#x3D; JSON.parse(&#96;[{&quot;name&quot;:&quot;測試1&quot;,&quot;bio&quot;:&quot;星爆&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avatar.webp&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9WgXcQ&quot;},{&quot;name&quot;:&quot;測試2&quot;,&quot;bio&quot;:&quot;氣流&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avata">
+<meta property="og:description" content="{     const flist &#x3D; [{&quot;name&quot;:&quot;測試1&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9WgXcQ&quot;,&quot;avatar&quot;:&quot;&#x2F;images&#x2F;avatar.webp&quot;,&quot;bio&quot;:&quot;星爆&quot;},{&quot;name&quot;:&quot;測試2&quot;,&quot;link&quot;:&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;dQw4w9">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="http://xchichix.github.io/images/site-logo.png">
 <meta property="article:published_time" content="2022-02-06T07:54:14.000Z">
@@ -39,25 +40,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -89,50 +91,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -174,21 +179,22 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/friends/index.html">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <h2 class="title-h2 text-center">大神教ㄇ</h2>
-            <div class="linkpage">
+            <h2 class="title-h2 text-center" itemprop="name headline">大神教ㄇ</h2>
+            <div itemprop="articleBody"><div class="linkpage">
     <ul id="friendsList"></ul>
 </div>
 
 <script type="text/javascript">
 {
-    const flist = JSON.parse(`[{"name":"測試1","bio":"星爆","avatar":"/images/avatar.webp","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"},{"name":"測試2","bio":"氣流","avatar":"/images/avatar.webp","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"},{"name":"測試3","bio":"斬","avatar":"/images/avatar.webp","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}]`);
+    const flist = [{"name":"測試1","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","avatar":"/images/avatar.webp","bio":"星爆"},{"name":"測試2","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","avatar":"/images/avatar.webp","bio":"氣流"},{"name":"測試3","link":"https://www.youtube.com/watch?v=dQw4w9WgXcQ","avatar":"/images/avatar.webp","bio":"斬"}];
     let friendNodes = '';
     while (flist.length > 0) {
         const rndNum = Math.floor(Math.random()*flist.length);
-        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar || '<%- url_cdn("images/avatar.webp") %>'}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio || ''}</p></a></li>`;
+        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar}" onerror="this.src='/images/avatar.webp';this.onerror=null;"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio}</p></a></li>`;
         flist.splice(rndNum, 1);
     }
     document.getElementById("friendsList").innerHTML = friendNodes;
@@ -200,16 +206,17 @@
     <div class="xContent pre-open"><div class="inner">
         <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">&quot;XChiChiX&quot;</span> <span class="string">//你的名字</span></span><br><span class="line">  <span class="attr">bio:</span> <span class="string">&quot;嗯&quot;</span>        <span class="string">//描述</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">&quot;https://raw.githubusercontent.com/XChiChiX/images/main/img/marin.gif&quot;</span> <span class="string">//頭貼</span></span><br><span class="line">  <span class="attr">link:</span> <span class="string">&quot;https://xchichix.github.io/&quot;</span>  <span class="string">//網站</span></span><br></pre></td></tr></table></figure> 
     </div></div>
-    </div>
+    </div></div>
         </div>
         <footer class="kratos-entry-footer clearfix">
             <div class="footer-tag clearfix">
                 <div class="pull-date">
-                <span>最後編輯：2022-02-06</span>
+                    <time datetime="2022-02-06T08:26:33.243Z" itemprop="dateModified">最後編輯：2022-02-06</time>
                 </div>
             </div>
         </footer>
     </div>
+    
     
         <div id="w-comments" class="post-comments"></div>
 <script>
@@ -222,11 +229,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -255,11 +261,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -534,9 +566,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -547,8 +576,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -562,9 +591,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -576,14 +605,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

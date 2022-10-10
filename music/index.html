@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>音樂相關 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -39,25 +40,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -89,50 +91,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -174,11 +179,12 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/music/index.html">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <div class="kratos-post-content">
-            <h2 class="title-h2 text-center">音樂相關</h2>
-            <h2 id="Fade"><a href="#Fade" class="headerlink" title="Fade"></a>Fade</h2><p>Song: Alan Walker - Fade<br>Free Download / Stream: <a target="_blank" rel="noopener" href="https://soundcloud.com/alanwalker/alan-walker-fade">https://soundcloud.com/alanwalker/alan-walker-fade</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vg95MYlTb3c">https://www.youtube.com/watch?v=vg95MYlTb3c</a></p>
+            <h2 class="title-h2 text-center" itemprop="name headline">音樂相關</h2>
+            <div itemprop="articleBody"><h2 id="Fade"><a href="#Fade" class="headerlink" title="Fade"></a>Fade</h2><p>Song: Alan Walker - Fade<br>Free Download / Stream: <a target="_blank" rel="noopener" href="https://soundcloud.com/alanwalker/alan-walker-fade">https://soundcloud.com/alanwalker/alan-walker-fade</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=vg95MYlTb3c">https://www.youtube.com/watch?v=vg95MYlTb3c</a></p>
 <h2 id="Spectre"><a href="#Spectre" class="headerlink" title="Spectre"></a>Spectre</h2><p>Song: Alan Walker - Spectre<br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=p7nIEJ1vpFM">https://www.youtube.com/watch?v=p7nIEJ1vpFM</a></p>
 <h2 id="My-Heart"><a href="#My-Heart" class="headerlink" title="My Heart"></a>My Heart</h2><p>Song: Different Heaven &amp; EH!DE - My Heart [NCS Release]<br>Free Download / Stream: <a target="_blank" rel="noopener" href="http://ncs.io/myheart">http://ncs.io/myheart</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=jK2aIUmmdP4">https://www.youtube.com/watch?v=jK2aIUmmdP4</a></p>
 <h2 id="Nova"><a href="#Nova" class="headerlink" title="Nova"></a>Nova</h2><p>Song: Ahrix - Nova<br>Streaming links: <a target="_blank" rel="noopener" href="https://push.fm/link/htlecq2o">https://push.fm/link/htlecq2o</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=X5mcY8ecs8I">https://www.youtube.com/watch?v=X5mcY8ecs8I</a></p>
@@ -203,16 +209,17 @@
 <h2 id="Shootin-Stars"><a href="#Shootin-Stars" class="headerlink" title="Shootin Stars"></a>Shootin Stars</h2><p>Song: Aero Chord feat. DDARK - Shootin Stars [NCS Release]<br>Free Download / Stream: <a target="_blank" rel="noopener" href="http://ncs.io/shootinstars">http://ncs.io/shootinstars</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=PTF5xgT-pm8">https://www.youtube.com/watch?v=PTF5xgT-pm8</a></p>
 <h2 id="Fall-To-Light"><a href="#Fall-To-Light" class="headerlink" title="Fall To Light"></a>Fall To Light</h2><p>Song: Laszlo - Fall To Light [NCS Release]<br>Free Download / Stream: <a target="_blank" rel="noopener" href="http://ncs.io/falltolight">http://ncs.io/falltolight</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Lq2UrnDsI_s">https://www.youtube.com/watch?v=Lq2UrnDsI_s</a></p>
 <h2 id="Way-Back-Home"><a href="#Way-Back-Home" class="headerlink" title="Way Back Home"></a>Way Back Home</h2><p>Song: Krys Talk &amp; Cole Sipe - Way Back Home [NCS Release]<br>Free Download / Stream: <a target="_blank" rel="noopener" href="http://ncs.io/waybackhome">http://ncs.io/waybackhome</a><br>Watch: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=qrmc7KVIoKQ">https://www.youtube.com/watch?v=qrmc7KVIoKQ</a></p>
-
+</div>
         </div>
         <footer class="kratos-entry-footer clearfix">
             <div class="footer-tag clearfix">
                 <div class="pull-date">
-                <span>最後編輯：2022-02-05</span>
+                    <time datetime="2022-02-05T15:53:45.141Z" itemprop="dateModified">最後編輯：2022-02-05</time>
                 </div>
             </div>
         </footer>
     </div>
+    
     
 </article>
 
@@ -233,11 +240,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -512,9 +545,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -525,8 +555,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -540,9 +570,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -554,14 +584,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

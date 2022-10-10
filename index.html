@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -37,25 +38,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -87,50 +89,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -172,10 +177,14 @@
 
         
 
-            
+            <!-- Breadcrumb for tag & category page -->
+
+
+
+
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -185,17 +194,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/01/%E7%95%99%E8%A8%80%E6%9D%BF/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E7%BD%AE%E9%A0%82/">置頂</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/01/%E7%95%99%E8%A8%80%E6%9D%BF/">留言板</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/01/%E7%95%99%E8%A8%80%E6%9D%BF/" itemprop="mainEntityOfPage"><span itemprop="name headline">留言板</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 …なん…だと…
                             
@@ -204,10 +213,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-01
-                        </a>
+                        <time datetime="2022-02-01T14:29:56.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-01</a>
+                        </time>
                         <a>
                             
                         </a>
@@ -240,23 +248,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/">我的北捷少女</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/" itemprop="mainEntityOfPage"><span itemprop="name headline">我的北捷少女</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 我是一個平凡無奇的大學生，沒有女朋友，然而更可悲的是，星期一到五都有早八，每天不得不在早上七點，勉強撐起那仍渴望著睡眠的身軀，準備去學校經歷知識的陶冶，而殊不知這一去，就要到晚上六點才能回到我那溫馨的小窩，也就是我的家。回到家之後，我...
                             
@@ -265,10 +273,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-10-09
-                        </a>
+                        <time datetime="2022-10-09T13:48:36.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-10-09</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -304,23 +311,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/05/07/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%8F%A3%E8%A9%A6-%E6%8E%83%E5%9C%B0%E6%A9%9F%E5%99%A8%E4%BA%BA/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/05/07/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%8F%A3%E8%A9%A6-%E6%8E%83%E5%9C%B0%E6%A9%9F%E5%99%A8%E4%BA%BA/">計程三口試-掃地機器人</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/05/07/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%8F%A3%E8%A9%A6-%E6%8E%83%E5%9C%B0%E6%A9%9F%E5%99%A8%E4%BA%BA/" itemprop="mainEntityOfPage"><span itemprop="name headline">計程三口試-掃地機器人</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 口試，是通往計程四之前的最後一戰，採線上的方式進行，預約制，我預約的時間為4/23 10:00，前一天想當然的興奮到差點睡不著覺。
                             
@@ -329,10 +336,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-05-07
-                        </a>
+                        <time datetime="2022-05-07T06:15:57.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-05-07</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -368,23 +374,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/04/17/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%A4%A7%E6%9C%83%E8%80%83%E7%B7%B4%E7%BF%92%E9%A1%8C/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/04/17/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%A4%A7%E6%9C%83%E8%80%83%E7%B7%B4%E7%BF%92%E9%A1%8C/">計程三大會考練習題</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/04/17/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%A4%A7%E6%9C%83%E8%80%83%E7%B7%B4%E7%BF%92%E9%A1%8C/" itemprop="mainEntityOfPage"><span itemprop="name headline">計程三大會考練習題</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 經過了漫長的等待，終於要在4/19迎來這學期首次大會考了，這是相當重要的一戰阿，我的命運究竟是從「計算機程式語言三」晉級「計算機程式語言四」，又或著是止步於此呢?將在下周揭曉~
                             
@@ -393,10 +399,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-04-17
-                        </a>
+                        <time datetime="2022-04-17T15:15:24.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-04-17</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -432,23 +437,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/">繼承練習0328</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/" itemprop="mainEntityOfPage"><span itemprop="name headline">繼承練習0328</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 有夠難搞，BUG一堆
 內容大概是在螢幕上顯示一些變數，並且用LinkedList串起來，每過一秒變數減1，歸零時刪除。
@@ -460,10 +465,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-28
-                        </a>
+                        <time datetime="2022-03-28T15:23:35.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-28</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -499,23 +503,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/22/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920322/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/22/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920322/">繼承練習0322</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/22/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920322/" itemprop="mainEntityOfPage"><span itemprop="name headline">繼承練習0322</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 作業內容是將下列C++程式碼改成Java的。
                             
@@ -524,10 +528,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-22
-                        </a>
+                        <time datetime="2022-03-22T13:24:32.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-22</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -563,23 +566,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/">繼承練習0321</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/" itemprop="mainEntityOfPage"><span itemprop="name headline">繼承練習0321</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 放個程式碼在這，這樣去學校就不用重打ㄌ
                             
@@ -588,10 +591,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-21
-                        </a>
+                        <time datetime="2022-03-21T14:17:17.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-21</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -627,23 +629,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/06/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E4%B8%BB%E9%AB%94/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/">從零開始系列</a> <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/%E8%B2%AA%E9%A3%9F%E8%9B%87/">貪食蛇</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/06/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E4%B8%BB%E9%AB%94/">貪食蛇-遊戲主體</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/06/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E4%B8%BB%E9%AB%94/" itemprop="mainEntityOfPage"><span itemprop="name headline">貪食蛇-遊戲主體</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 創造完遊戲基本的物件後，就可以開始做遊戲實際運行的畫面了。
                             
@@ -652,10 +654,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-06
-                        </a>
+                        <time datetime="2022-03-06T06:15:09.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-06</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -691,23 +692,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E7%89%A9%E4%BB%B6/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/">從零開始系列</a> <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/%E8%B2%AA%E9%A3%9F%E8%9B%87/">貪食蛇</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E7%89%A9%E4%BB%B6/">貪食蛇-遊戲物件</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E7%89%A9%E4%BB%B6/" itemprop="mainEntityOfPage"><span itemprop="name headline">貪食蛇-遊戲物件</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 在貪食蛇遊戲中，有兩個非常重要的物件，分別是蛇和食物，蛇吃到食物會變長，撞到自己身體或牆壁則會死亡，食物被吃掉則會消失，並在隨機點重生。可以用C++中的Class來實現。
 蛇遊戲中的主角，也是玩家唯一可以操控的人物(動物?)，基本資料...
@@ -717,10 +718,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-05
-                        </a>
+                        <time datetime="2022-03-05T10:59:05.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-05</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -756,23 +756,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E7%A7%BB%E5%8B%95/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/">從零開始系列</a> <a class="label-link" href="/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%B3%BB%E5%88%97/%E8%B2%AA%E9%A3%9F%E8%9B%87/">貪食蛇</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E7%A7%BB%E5%8B%95/">貪食蛇-移動</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E7%A7%BB%E5%8B%95/" itemprop="mainEntityOfPage"><span itemprop="name headline">貪食蛇-移動</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 如果要用鍵盤來控制移動方向(w:上 s:下 a:左 d:右)，就要讓電腦知道當下按的鍵，並馬上做出反應，再根據按鍵來決定移動方向。
 這裡可以用 _kbhit() 以及 _getch() 這兩個函式來實現此目標。
@@ -783,10 +783,9 @@ _kbhit() 是用...
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-03-05
-                        </a>
+                        <time datetime="2022-03-05T03:13:42.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-03-05</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -842,11 +841,10 @@ _kbhit() 是用...
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -879,11 +877,37 @@ _kbhit() 是用...
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -1156,9 +1180,6 @@ _kbhit() 是用...
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -1169,8 +1190,8 @@ _kbhit() 是用...
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -1184,9 +1205,9 @@ _kbhit() 是用...
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -1198,14 +1219,11 @@ _kbhit() 是用...
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

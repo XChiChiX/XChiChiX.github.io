@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>繼承練習0328 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -40,25 +41,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -90,50 +92,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -175,16 +180,20 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">繼承練習0328</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">繼承練習0328</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-03-28</li>
-                <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
+                <li><time datetime="2022-03-28T15:23:35.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-03-28</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">XChiChiX</span>
+                </li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
@@ -208,12 +217,15 @@
             </ul>
         </header>
         <div class="kratos-post-content">
+            
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1648481603603"></time> 前，其中的内容可能需要更新。
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最後編輯於 <time datetime="1648481603603"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
+            
             <hr />
-            <p>有夠難搞，BUG一堆</p>
+            <div itemprop="articleBody"><p>有夠難搞，BUG一堆</p>
 <p>內容大概是在螢幕上顯示一些變數，並且用LinkedList串起來，每過一秒變數減1，歸零時刪除。</p>
 <p>可以用鍵盤做一些操作。</p>
 <p>目前問題是若只剩下一個變數，把他刪除會出事，可能直接強制結束之類的。</p>
@@ -223,7 +235,7 @@
     <div class="xContent pre-open"><div class="inner">
         <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;windows.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;conio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Map_Width 50</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> Map_Height 30</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> val;</span><br><span class="line">        <span class="keyword">int</span> x;</span><br><span class="line">        <span class="keyword">int</span> y;</span><br><span class="line">        <span class="keyword">clock_t</span> StartTime;</span><br><span class="line">        <span class="keyword">clock_t</span> CurrentTime;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        Node *next;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">AddVal</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(val &lt; <span class="number">9</span>) ++val;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">ReduceVal</span><span class="params">()</span></span>&#123;</span><br><span class="line">            --val;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">int</span> <span class="title">Die</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(val &lt;= <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Reset</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="built_in">gotoxy</span>(x, y);</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">Node</span>()&#123;</span><br><span class="line">            val = <span class="number">9</span>;</span><br><span class="line">            x = <span class="built_in">rand</span>() % Map_Width;</span><br><span class="line">            y = <span class="built_in">rand</span>() % Map_Height;</span><br><span class="line">            StartTime = <span class="built_in">clock</span>();</span><br><span class="line">            CurrentTime = <span class="built_in">clock</span>();</span><br><span class="line">            <span class="built_in">show</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        ~<span class="built_in">Node</span>()&#123;</span><br><span class="line">            <span class="built_in">gotoxy</span>(x, y);</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">gotoxy</span><span class="params">(<span class="keyword">int</span> xpos, <span class="keyword">int</span> ypos)</span></span>&#123;</span><br><span class="line">            COORD scrn;</span><br><span class="line">            HANDLE hOuput = <span class="built_in">GetStdHandle</span>(STD_OUTPUT_HANDLE);</span><br><span class="line">            scrn.X = xpos; scrn.Y = ypos;</span><br><span class="line">            <span class="built_in">SetConsoleCursorPosition</span>(hOuput,scrn);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="built_in">UpDateTime</span>();</span><br><span class="line">            <span class="built_in">gotoxy</span>(x, y);</span><br><span class="line">            cout &lt;&lt; val;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">UpDateTime</span><span class="params">()</span></span>&#123;</span><br><span class="line">            CurrentTime = <span class="built_in">clock</span>();</span><br><span class="line">            <span class="keyword">if</span>((<span class="keyword">double</span>)(CurrentTime-StartTime)/CLOCKS_PER_SEC &gt; <span class="number">1</span>)&#123;</span><br><span class="line">                StartTime = <span class="built_in">clock</span>();</span><br><span class="line">                --val;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LinkedList</span>&#123;</span></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        Node *p;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">reset</span><span class="params">()</span></span>&#123;</span><br><span class="line">            p-&gt;<span class="built_in">Reset</span>();</span><br><span class="line">            p = <span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function">Node* <span class="title">GetP</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> p;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">LinkedList</span>()&#123;</span><br><span class="line">            p = <span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(Node *newNode)</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(p == <span class="literal">NULL</span>)&#123;</span><br><span class="line">                p = newNode;</span><br><span class="line">                p-&gt;next = newNode;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                newNode-&gt;next = p-&gt;next;</span><br><span class="line">                p-&gt;next = newNode;</span><br><span class="line">                p = newNode;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Grow</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(p != <span class="literal">NULL</span>)&#123;</span><br><span class="line">                Node *buffer = p-&gt;next;</span><br><span class="line">                <span class="keyword">do</span> &#123;</span><br><span class="line">                    buffer-&gt;<span class="built_in">AddVal</span>();</span><br><span class="line">                    buffer = buffer-&gt;next;</span><br><span class="line">                &#125;<span class="keyword">while</span>(p-&gt;next != buffer);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Down</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(p != <span class="literal">NULL</span>)&#123;</span><br><span class="line">                Node *buffer = p-&gt;next;</span><br><span class="line">                <span class="keyword">do</span> &#123;</span><br><span class="line">                    buffer-&gt;<span class="built_in">ReduceVal</span>();</span><br><span class="line">                    buffer = buffer-&gt;next;</span><br><span class="line">                &#125;<span class="keyword">while</span>(p-&gt;next != buffer);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">UI</span>&#123;</span></span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">char</span> key;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Action</span><span class="params">(LinkedList *list)</span></span>&#123;</span><br><span class="line">            <span class="built_in"><span class="keyword">switch</span></span> (<span class="built_in">GetKey</span>())</span><br><span class="line">            &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;A&#x27;</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;a&#x27;</span>:</span><br><span class="line">            &#123;</span><br><span class="line">                Node *newNode = <span class="keyword">new</span> Node;</span><br><span class="line">                list-&gt;<span class="built_in">Insert</span>(newNode);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line">                list-&gt;<span class="built_in">Grow</span>();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">                list-&gt;<span class="built_in">Down</span>();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">UpDate</span>(list);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">int</span> <span class="title">GetKey</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(_kbhit())&#123;</span><br><span class="line">                key = _getch();</span><br><span class="line">                <span class="keyword">return</span> key;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">UpDate</span><span class="params">(LinkedList *list)</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(list-&gt;<span class="built_in">GetP</span>() != <span class="literal">NULL</span>)&#123;</span><br><span class="line">                Node *p = list-&gt;<span class="built_in">GetP</span>();</span><br><span class="line">                <span class="keyword">do</span> &#123;</span><br><span class="line">                    p-&gt;<span class="built_in">show</span>();</span><br><span class="line">                    <span class="keyword">if</span>(p-&gt;next-&gt;<span class="built_in">Die</span>())&#123;</span><br><span class="line">                        Node *buffer = p-&gt;next;</span><br><span class="line">                        <span class="keyword">if</span>(buffer == p)&#123;</span><br><span class="line">                            list-&gt;<span class="built_in">reset</span>();</span><br><span class="line">                            <span class="keyword">break</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        p-&gt;next = p-&gt;next-&gt;next;</span><br><span class="line">                        <span class="keyword">delete</span> buffer;</span><br><span class="line">                    &#125;</span><br><span class="line">                    p = p-&gt;next;</span><br><span class="line">                &#125;<span class="keyword">while</span>(p != list-&gt;<span class="built_in">GetP</span>());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HideCursor</span><span class="params">()</span></span>&#123;</span><br><span class="line">    CONSOLE_CURSOR_INFO cursor_info = &#123;<span class="number">1</span>, <span class="number">0</span>&#125;;</span><br><span class="line">    <span class="built_in">SetConsoleCursorInfo</span>(<span class="built_in">GetStdHandle</span>(STD_OUTPUT_HANDLE), &amp;cursor_info);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">HideCursor</span>();</span><br><span class="line">    <span class="built_in">srand</span>(<span class="built_in">time</span>(<span class="literal">NULL</span>));</span><br><span class="line">    LinkedList *list = <span class="keyword">new</span> LinkedList;</span><br><span class="line">    UI *ui = <span class="keyword">new</span> UI;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">        ui-&gt;<span class="built_in">Action</span>(list);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
-    </div>
+    </div></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -234,7 +246,7 @@
                     <a class="tag-none-link" href="/tags/inheritance/" rel="tag">inheritance</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-03-28</span>
+                    <time datetime="2022-03-28T15:33:23.603Z" itemprop="dateModified">最後編輯：2022-03-28</time>
                 </div>
             </div>
         </footer>
@@ -265,11 +277,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -298,11 +309,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -577,9 +614,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -590,8 +624,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -605,9 +639,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -619,14 +653,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -37,25 +38,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -87,50 +89,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -172,26 +177,30 @@
 
         
 
-            
+            <!-- Breadcrumb for tag & category page -->
+
+
+
+
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/12/UVA-11005/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/12/UVA-11005/">UVA-11005: Cheapest Base</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/12/UVA-11005/" itemprop="mainEntityOfPage"><span itemprop="name headline">UVA-11005: Cheapest Base</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星選集 49 道必考題
                             
@@ -200,10 +209,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-12
-                        </a>
+                        <time datetime="2022-02-12T06:35:19.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-12</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -239,23 +247,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/12/UVA-10642/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/12/UVA-10642/">UVA-10642: Can You Solve It?</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/12/UVA-10642/" itemprop="mainEntityOfPage"><span itemprop="name headline">UVA-10642: Can You Solve It?</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星選集 49 道必考題
                             
@@ -264,10 +272,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-12
-                        </a>
+                        <time datetime="2022-02-12T03:54:44.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-12</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -303,23 +310,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/11/UVA-10221/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/11/UVA-10221/">UVA-10221: Satellites</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/11/UVA-10221/" itemprop="mainEntityOfPage"><span itemprop="name headline">UVA-10221: Satellites</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星選集 49 道必考題
                             
@@ -328,10 +335,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-11
-                        </a>
+                        <time datetime="2022-02-11T15:11:10.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-11</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -367,23 +373,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/09/UVA-10093/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/09/UVA-10093/">UVA-10093: An Easy Problem!</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/09/UVA-10093/" itemprop="mainEntityOfPage"><span itemprop="name headline">UVA-10093: An Easy Problem!</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星選集 49 道必考題
                             
@@ -392,10 +398,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-09
-                        </a>
+                        <time datetime="2022-02-09T04:02:08.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-09</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -431,23 +436,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/09/d129-00136/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/09/d129-00136/">d129: 00136 - Ugly Numbers</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/09/d129-00136/" itemprop="mainEntityOfPage"><span itemprop="name headline">d129: 00136 - Ugly Numbers</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星
                             
@@ -456,10 +461,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-09
-                        </a>
+                        <time datetime="2022-02-09T02:41:07.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-09</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -495,23 +499,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/08/d206-00108/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%A7%A3%E9%A1%8C%E7%B4%80%E9%8C%84/">解題紀錄</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/08/d206-00108/">d206: 00108 - Maximum Sum</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/08/d206-00108/" itemprop="mainEntityOfPage"><span itemprop="name headline">d206: 00108 - Maximum Sum</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 CPE 一顆星(騙人的吧)
                             
@@ -520,10 +524,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-08
-                        </a>
+                        <time datetime="2022-02-08T11:49:01.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-08</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -559,23 +562,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/07/%E9%9B%86%E5%90%88/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/">資料結構</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E9%9B%86%E5%90%88/">C++ STL: Set</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E9%9B%86%E5%90%88/" itemprop="mainEntityOfPage"><span itemprop="name headline">C++ STL: Set</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 集合
                             
@@ -584,10 +587,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-07
-                        </a>
+                        <time datetime="2022-02-07T10:37:32.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-07</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -623,23 +625,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/07/%E6%98%A0%E5%B0%84/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/">資料結構</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E6%98%A0%E5%B0%84/">C++ STL: Map</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E6%98%A0%E5%B0%84/" itemprop="mainEntityOfPage"><span itemprop="name headline">C++ STL: Map</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 映射
                             
@@ -648,10 +650,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-07
-                        </a>
+                        <time datetime="2022-02-07T08:17:23.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-07</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -687,23 +688,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/07/%E4%BD%87%E5%88%97/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/">資料結構</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E4%BD%87%E5%88%97/">C++ STL: Queue</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E4%BD%87%E5%88%97/" itemprop="mainEntityOfPage"><span itemprop="name headline">C++ STL: Queue</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 佇列
                             
@@ -712,10 +713,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-07
-                        </a>
+                        <time datetime="2022-02-07T06:53:28.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-07</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -751,23 +751,23 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/02/07/%E5%A0%86%E7%96%8A/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B/">資料結構</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E5%A0%86%E7%96%8A/">C++ STL: Stack</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/02/07/%E5%A0%86%E7%96%8A/" itemprop="mainEntityOfPage"><span itemprop="name headline">C++ STL: Stack</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 堆疊
                             
@@ -776,10 +776,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-02-07
-                        </a>
+                        <time datetime="2022-02-07T04:18:52.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-02-07</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -835,11 +834,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -872,11 +870,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -1149,9 +1173,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -1162,8 +1183,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -1177,9 +1198,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -1191,14 +1212,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

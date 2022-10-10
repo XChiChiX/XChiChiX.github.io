@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>我的北捷少女 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -40,25 +41,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -90,50 +92,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -175,16 +180,20 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">我的北捷少女</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">我的北捷少女</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-10-09</li>
-                <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
+                <li><time datetime="2022-10-09T13:48:36.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-09</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">XChiChiX</span>
+                </li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
@@ -208,12 +217,15 @@
             </ul>
         </header>
         <div class="kratos-post-content">
+            
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1665323645125"></time> 前，其中的内容可能需要更新。
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最後編輯於 <time datetime="1665323645125"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
+            
             <hr />
-            <p>我是一個平凡無奇的大學生，沒有女朋友，然而更可悲的是，星期一到五都有早八，每天不得不在早上七點，勉強撐起那仍渴望著睡眠的身軀，準備去學校經歷知識的陶冶，而殊不知這一去，就要到晚上六點才能回到我那溫馨的小窩，也就是我的家。回到家之後，我立刻打開了筆電，做的事無非就是進入youtube看看影片，又或著是打開不能說的網站尋找好康，為的就是把一天累積的壓力給宣洩出去。不過根據相對論，愉快的時間總是過得特別快，時鐘上的短針不知不覺間已經指到了11，這是要睡覺的信號，有很多人問我為什麼要這麼早睡，說什麼大學生都沒在睡覺之類的話語，感覺我就像是個怪人似的，但他們不知道的是，我的目的是每天睡滿8小時，並且在睡前一定喝一杯溫牛奶，做20分鐘的柔軟操，上了床，馬上熟睡，一覺到天亮。這是一種堅持，是一種原則，甚至是我一生的使命。日復一日，正當我以為大學的這四年都要這麼度過時，在四月的某一天，卻發生了一件事，徹底的改變了我的命運。</p>
+            <div itemprop="articleBody"><p>我是一個平凡無奇的大學生，沒有女朋友，然而更可悲的是，星期一到五都有早八，每天不得不在早上七點，勉強撐起那仍渴望著睡眠的身軀，準備去學校經歷知識的陶冶，而殊不知這一去，就要到晚上六點才能回到我那溫馨的小窩，也就是我的家。回到家之後，我立刻打開了筆電，做的事無非就是進入youtube看看影片，又或著是打開不能說的網站尋找好康，為的就是把一天累積的壓力給宣洩出去。不過根據相對論，愉快的時間總是過得特別快，時鐘上的短針不知不覺間已經指到了11，這是要睡覺的信號，有很多人問我為什麼要這麼早睡，說什麼大學生都沒在睡覺之類的話語，感覺我就像是個怪人似的，但他們不知道的是，我的目的是每天睡滿8小時，並且在睡前一定喝一杯溫牛奶，做20分鐘的柔軟操，上了床，馬上熟睡，一覺到天亮。這是一種堅持，是一種原則，甚至是我一生的使命。日復一日，正當我以為大學的這四年都要這麼度過時，在四月的某一天，卻發生了一件事，徹底的改變了我的命運。</p>
 <p>那天，下午六點的鐘聲一響，我一如往常的拿起書包，獨自一人準備朝著捷運站走去，然而，我突然停下了腳步，意識到了一件事<br>「明天，好像有離散數學的小考欸」<br>我自言自語的這麼說著</p>
 <p>竟然把這麼重要的事情給忘得一乾二淨，實在是挺佩服我自己的，同時，我重新整理了思緒，打開手機的tronclass APP，試圖查詢課表，求得考試時間<br>「欸都，星期二..第8節…，有了，15:10分!!」<br>現在時間距離下課剛好5分鐘，經過了簡單的計算，目前離考試時間僅僅只剩下21個小時又5分鐘，狀況可說是十分悲觀，我意識到時間所剩不多了，分秒必爭，就連這通勤的時間也必須盡可能地縮短<br>「沒時間讓我哭哭啼啼了!!」<br>我試著振奮自己並逐漸邁開步伐<br>「全神貫注!!」<br>接著模仿遊戲裡的技能以減少起步時間，避免時間的浪費</p>
 <p>「呼阿..呼阿..總算…來到..這裡了」<br>一分鐘過去，我已是上氣不接下氣的狀態，卻還是勉強的從工學大樓來到了這裡，也就是克難波的入口<br>「這到底什麼鬼天氣阿!」<br>我看著天空試圖宣洩不滿，心想著現在明明才四月，卻早已相當炎熱，讓人有身在烤箱內的錯覺，現在就已經這樣了，真不敢想像到了七月左右會變成什麼樣子呢。在稍微抱怨完之後，我將視線往下移，映入眼簾的是我的衣服，早已被汗水浸溼，但我並沒有帶任何備用的衣物，只能用隨身攜帶的手帕稍微擦一擦忍耐一下。</p>
@@ -227,7 +239,7 @@
 <p>在名為人生的這條路上，我走的可說是相當坎坷，書讀不好，運動也不擅長，就連建立基本的人際關係，對我來說也是相當大的困難，從小到大，交到的朋友數量屈指可數，讓不少親人師長對我的狀況相當擔心，什麼事都做不好、沒有人會需要你，這是別人對我的評論。但是現在，這名少女，向我請求了幫助，如果我在此拒絕，不是又重蹈覆轍了嗎，這樣下去我不就又只能繼續當個封閉者了嗎?</p>
 <p>不行，不能在這樣了，我勢必得做出改變<br>「如..如..如果妳不介意的話，是可以啦」<br>這是我下定決心之後說出的話，雖然稱不上是帥氣，但這一步，我還是跨出來了，封閉的內心開始產生了一點裂縫，敲擊它的不是別人，正是在我眼前的少女<br>「真的?可以嗎?」<br>「嗯，雖然有些地方我也不是很熟悉，但我會盡力的」<br>「やったー」<br>她好像是因為太開心了，竟然講出了日文，不過我的目光完全被她的笑容吸引了過去，不知道為什麼，感覺內心深處有什麼即將要改變。</p>
 <p>四月的某一天，在淡水捷運站，我遇到了一名少女，與她做出了約定，要帶她觀賞淡水信義線每一站的風景，我們的旅程，隨著下一班的電車在月台進站而開始了…</p>
-
+</div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -238,7 +250,7 @@
                     <a class="tag-none-link" href="/tags/%E5%B9%BB%E6%83%B3%E6%96%87/" rel="tag">幻想文</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-10-09</span>
+                    <time datetime="2022-10-09T13:54:05.125Z" itemprop="dateModified">最後編輯：2022-10-09</time>
                 </div>
             </div>
         </footer>
@@ -265,11 +277,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -298,11 +309,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -577,9 +614,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -590,8 +624,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -605,9 +639,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -619,14 +653,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

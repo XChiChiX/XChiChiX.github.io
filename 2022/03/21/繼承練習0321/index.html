@@ -3,7 +3,8 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
+  <link rel="icon" href="./images/site-logo.png">
+  
   <title>繼承練習0321 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -40,25 +41,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -90,50 +92,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -175,16 +180,20 @@
 
         
 
-            <article>
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://xchichix.github.io/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center">繼承練習0321</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">繼承練習0321</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><i class="fa fa-calendar"></i> 2022-03-21</li>
-                <li><i class="fa fa-user"></i> 作者 XChiChiX</li>
+                <li><time datetime="2022-03-21T14:17:17.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-03-21</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">XChiChiX</span>
+                </li>
                 <li>
                     <i class="fa fa-edit"></i> 
                     
@@ -208,19 +217,22 @@
             </ul>
         </header>
         <div class="kratos-post-content">
+            
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                本文最後編輯於 <time datetime="1647873958227"></time> 前，其中的内容可能需要更新。
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最後編輯於 <time datetime="1647873958227"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
+            
             <hr />
-            <p>放個程式碼在這，這樣去學校就不用重打ㄌ</p>
+            <div itemprop="articleBody"><p>放個程式碼在這，這樣去學校就不用重打ㄌ</p>
 <span id="more"></span>
 <div class="xControl active">
     <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>C++</span></div>
     <div class="xContent pre-open"><div class="inner">
         <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Object</span>&#123;</span></span><br><span class="line">    <span class="keyword">protected</span>:</span><br><span class="line">        <span class="keyword">int</span> HP;</span><br><span class="line">        <span class="keyword">int</span> ATK;</span><br><span class="line">        <span class="keyword">int</span> hitRate;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Object</span>(<span class="keyword">int</span> hp, <span class="keyword">int</span> atk, <span class="keyword">int</span> rate):<span class="built_in">HP</span>(hp), <span class="built_in">ATK</span>(atk),<span class="built_in">hitRate</span>(rate) &#123;&#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">state</span><span class="params">()</span></span>&#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;HP: &quot;</span> &lt;&lt; HP &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;ATK: &quot;</span> &lt;&lt; ATK &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;hitRate: &quot;</span> &lt;&lt; hitRate &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Attack</span><span class="params">(Object *obj)</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="built_in">rand</span>()%<span class="number">100</span>+<span class="number">1</span> &lt;= hitRate)&#123;</span><br><span class="line">                cout &lt;&lt; <span class="string">&quot;Attack sucess!!\n&quot;</span>;</span><br><span class="line">                obj-&gt;<span class="built_in">UnderAttack</span>(ATK);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> cout &lt;&lt; <span class="string">&quot;miss...\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">UnderAttack</span><span class="params">(<span class="keyword">int</span> damage)</span></span>&#123;</span><br><span class="line">            HP -= damage;</span><br><span class="line">            <span class="keyword">if</span>(HP &lt; <span class="number">0</span>) HP = <span class="number">0</span>;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;目前血量: &quot;</span> &lt;&lt; HP &lt;&lt; <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">int</span> <span class="title">GetHP</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">return</span> HP;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">bool</span> <span class="title">die</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(HP &lt;= <span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Player</span>:</span><span class="keyword">public</span> Object&#123;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> Level = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Player</span>():<span class="built_in">Object</span>(<span class="number">100</span>, <span class="number">50</span>, <span class="number">80</span>)&#123;&#125;</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">LevelUP</span><span class="params">()</span></span>&#123;</span><br><span class="line">            ++Level;</span><br><span class="line">            HP += <span class="number">10</span>;</span><br><span class="line">            <span class="keyword">if</span>(Level % <span class="number">3</span> == <span class="number">0</span>) ++ATK;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Monster</span>:</span><span class="keyword">public</span> Object&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">Monster</span>():<span class="built_in">Object</span>(<span class="number">200</span>, <span class="number">10</span>, <span class="number">50</span>)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NPC</span>:</span><span class="keyword">public</span> Object&#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="built_in">NPC</span>():<span class="built_in">Object</span>(<span class="number">150</span>, <span class="number">5</span>, <span class="number">60</span>)&#123;&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">srand</span>(<span class="built_in">time</span>(<span class="literal">NULL</span>));</span><br><span class="line">    Player *player = <span class="keyword">new</span> Player;</span><br><span class="line">    Monster *monster = <span class="keyword">new</span> Monster;</span><br><span class="line">    NPC *npc = <span class="keyword">new</span> NPC;</span><br><span class="line"></span><br><span class="line">    player-&gt;<span class="built_in">state</span>();</span><br><span class="line">    monster-&gt;<span class="built_in">state</span>();</span><br><span class="line">    npc-&gt;<span class="built_in">state</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;player對monster發動攻擊!!\n&quot;</span>;</span><br><span class="line">        player-&gt;<span class="built_in">Attack</span>(monster);</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;npc對monster發動攻擊!!\n&quot;</span>;</span><br><span class="line">        npc-&gt;<span class="built_in">Attack</span>(monster);</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;monster對player發動攻擊!!\n&quot;</span>;</span><br><span class="line">        monster-&gt;<span class="built_in">Attack</span>(player);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(player-&gt;<span class="built_in">die</span>())&#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;你已經死了!!\n&quot;</span>;</span><br><span class="line">            <span class="keyword">delete</span> player;</span><br><span class="line">            <span class="keyword">delete</span> monster;</span><br><span class="line">            <span class="keyword">delete</span> npc;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(monster-&gt;<span class="built_in">die</span>())&#123;</span><br><span class="line">            player-&gt;<span class="built_in">LevelUP</span>();</span><br><span class="line">            <span class="keyword">delete</span> monster;</span><br><span class="line">            Monster *monster = <span class="keyword">new</span> Monster;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(npc-&gt;<span class="built_in">die</span>())&#123;</span><br><span class="line">            <span class="keyword">delete</span> npc;</span><br><span class="line">            NPC *npc = <span class="keyword">new</span> NPC;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
     </div></div>
-    </div>
+    </div></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -231,7 +243,7 @@
                     <a class="tag-none-link" href="/tags/inheritance/" rel="tag">inheritance</a>
                 </div>
                 <div class="pull-date">
-                <span>最後編輯：2022-03-21</span>
+                    <time datetime="2022-03-21T14:45:58.227Z" itemprop="dateModified">最後編輯：2022-03-21</time>
                 </div>
             </div>
         </footer>
@@ -262,11 +274,10 @@
                 placeholder: '不用登錄也行',
                 meta: ['nick'],
                 mail: '信箱'
-
             }, JSON.parse('{"serverURL":"https://blog-api-8c9u8y6af-xchichix.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -295,11 +306,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -574,9 +611,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -587,8 +621,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -602,9 +636,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -616,14 +650,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 

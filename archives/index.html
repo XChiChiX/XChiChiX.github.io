@@ -3,8 +3,9 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/site-logo.png">
-  <title>XChiChiX</title>
+  <link rel="icon" href="./images/site-logo.png">
+  
+  <title>檔案館 | XChiChiX</title>
   <meta name="author" content="XChiChiX" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -17,7 +18,7 @@
   
   <meta name="description" content="もっと強くなりたい">
 <meta property="og:type" content="website">
-<meta property="og:title" content="XChiChiX">
+<meta property="og:title" content="檔案館">
 <meta property="og:url" content="http://xchichix.github.io/archives/index.html">
 <meta property="og:site_name" content="XChiChiX">
 <meta property="og:description" content="もっと強くなりたい">
@@ -37,25 +38,26 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
   
   <style>
@@ -87,50 +89,53 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
                                     
-                                
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首頁</a></li>
+                                        
                                     
-                                        <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-book"></i>歸檔</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
                                     
-                                        <li><a href="/bangumis/"><i class="fa fa-television"></i>追劇</a></li>
+                                        
+                                            <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
                                     
-                                
+                                        
+                                            <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
+                                        
                                     
-                                        <li><a href="/music/"><i class="fa fa-music"></i>音樂相關</a></li>
+                                        
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/charts/"><i class="fa fa-area-chart"></i>統計</a></li>
-                                    
-                                
-                                    
-                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth"><i class="fa fa-info-circle"></i>主題來源</a></li>
-                                    
-                                
-                                    
-                                        <li>
-                                            <a><i class="fa fa-bookmark"></i>網站</a>
-                                            <ul class="sub-menu">
-                                                
+                                        
+                                            <li>
+                                                <a><i class="fa fa-bookmark"></i>網站</a>
+                                                <ul class="sub-menu">
                                                     
-                                                
+                                                        
                                                     
-                                                        <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
+                                                            <li><a href="/friends/"><i class="fa fa-bolt"></i>大神</a></li>
+                                                        
                                                     
-                                                
+                                                        
+                                                            <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
+                                                        
                                                     
-                                                        <li><a href="/links/"><i class="fa fa-heart"></i>好康的</a></li>
-                                                    
-                                                
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        
                                     
-                                
-                                    
-                                        <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
+                                            <li><a href="/search/"><i class="fa fa-search"></i></a></li>
+                                        
                                     
                                 
                             </ul>
@@ -176,23 +181,25 @@
 <style>
   .post-meta time{color:#00a7e0}
   @media (max-width:767px){.posts-collapse{margin:0 20px}
-  .posts-collapse .post-meta,.posts-collapse .post-title{display:block;width:auto;text-align:left}}
+  .posts-collapse .post-meta,
+  .posts-collapse .post-title{display:block;width:auto;text-align:left}}
   .posts-collapse{position:relative}
   .posts-collapse::after{content:" ";position:absolute;top:20px;left:0;margin-left:-2px;width:4px;height:calc(100% - 35px);background:#f5f5f5;z-index:-1}
   @media (max-width:991px){.posts-collapse{margin:0 20px}}
   .posts-collapse .collection-title{position:relative}
-  .posts-collapse .collection-title h1,.posts-collapse .collection-title h2{margin-left:20px}.posts-collapse .collection-title small{color:#bbb;margin-left:5px}
+  .posts-collapse .collection-title h1,
+  .posts-collapse .collection-title h2{margin-left:20px}
+  .posts-collapse .collection-title small{color:#bbb;margin-left:5px}
   .posts-collapse .collection-title::before{content:" ";position:absolute;left:0;top:50%;margin-left:-4px;margin-top:-4px;width:8px;height:8px;background:#bbb;border-radius:50%}
   .posts-collapse .post-header{position:relative;transition-duration:.2s;transition-timing-function:ease-in-out;transition-delay:0s;transition-property:border}
-  .posts-collapse .post-header::before{content:" ";position:absolute;left:0;top:12px;width:6px;height:6px;margin-left:-4px;background:#bbb;border-radius:50%;border:1px solid #fff}
-  .posts-collapse .post-header:hover{border-bottom-color:#666}.posts-collapse .post-header:hover::before{background:#222}
+  .posts-collapse .post-header::before{content:" ";position:absolute;left:0;top:12px;width:6px;height:6px;margin-left:-4px;background:#bbb;border-radius:50%;border:1px solid #fff;transition: all .3s ease-in-out}
+  .posts-collapse .post-header:hover{border-bottom-color:#666}
+  .posts-collapse .post-header:hover::before{background:#222}
   .posts-collapse .post-meta{position:absolute;font-size:12px;left:20px;top:5px}
   .posts-collapse .post-comments-count{display:none}
   .posts-collapse .post-title{margin-left:70px;font-size:16px;font-weight:400;line-height:inherit}
-  .posts-collapse .post-title::after{margin-left:3px;opacity:.6}.posts-collapse .post-title a{color:#666;border-bottom:none}
-  .kratos-post-content div.arc-tags{margin-bottom:30px}
-  .arc-tags a{-webkit-box-shadow:0 1px 4px rgba(0,0,0,.1);box-shadow:0 1px 4px rgba(0,0,0,.1);border:1px solid #fff;border-radius:15px;margin:4px 8px 0 0;font-weight:500;display:inline-block;padding:0 12px;background:rgba(255,255,255,.5);font-size:16px;}
-  .arc-tags a::before{content:"# ";color:#e8a6a6}
+  .posts-collapse .post-title::after{margin-left:3px;opacity:.6}
+  .posts-collapse .post-title a{color:#666;border-bottom:none}
 </style>
 
   <article>
@@ -200,1849 +207,1765 @@
           <div class="kratos-post-content">
             <h2 class="title-h2 text-center">文章歸檔</h2>
             <div id="archives">
-                
-                  <div class="arc-tags">
-                      <a class="tag-none-link" href="/tags/cpe/" rel="tag">cpe</a> <a class="tag-none-link" href="/tags/dp/" rel="tag">dp</a> <a class="tag-none-link" href="/tags/inheritance/" rel="tag">inheritance</a> <a class="tag-none-link" href="/tags/map/" rel="tag">map</a> <a class="tag-none-link" href="/tags/queue/" rel="tag">queue</a> <a class="tag-none-link" href="/tags/set/" rel="tag">set</a> <a class="tag-none-link" href="/tags/sort/" rel="tag">sort</a> <a class="tag-none-link" href="/tags/stack/" rel="tag">stack</a> <a class="tag-none-link" href="/tags/uva/" rel="tag">uva</a> <a class="tag-none-link" href="/tags/zerojudge/" rel="tag">zerojudge</a> <a class="tag-none-link" href="/tags/%E5%B9%BB%E6%83%B3%E6%96%87/" rel="tag">幻想文</a> <a class="tag-none-link" href="/tags/%E6%97%A9%E4%B8%8A%E5%A5%BD/" rel="tag">早上好</a> <a class="tag-none-link" href="/tags/%E6%98%9F%E7%88%86/" rel="tag">星爆</a> <a class="tag-none-link" href="/tags/%E6%9E%9A%E8%88%89/" rel="tag">枚舉</a> <a class="tag-none-link" href="/tags/%E6%A8%A1%E6%93%AC/" rel="tag">模擬</a> <a class="tag-none-link" href="/tags/%E8%B2%AA%E9%A3%9F%E8%9B%87/" rel="tag">貪食蛇</a> <a class="tag-none-link" href="/tags/%E8%B2%BB%E6%B0%8F%E6%95%B8%E5%88%97/" rel="tag">費氏數列</a> <a class="tag-none-link" href="/tags/%E9%80%B2%E5%88%B6%E8%BD%89%E6%8F%9B/" rel="tag">進制轉換</a>
-                  </div>
-                
-                <div class="post-block archive post" style="margin-left: 2em;">
-                  <h3 class="archive-page-counter">目前共有 79 篇文章~</h3>
-                  <div class="posts-collapse">
+              <div class="post-block archive post" style="margin-left: 2em;">
+                <h3 class="archive-page-counter">目前共有 79 篇文章~</h3>
+                <div class="posts-collapse">
+                  
+                  
+                    
+                    
+                      <!-- 没遇到Title的会被自动忽略年份，即使并不一致 -->
+                      
+                      <div class="collection-title">
+                        <a href="/archives/2022/"><h2 class="archive-year">2022</h2></a>
+                      </div>
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">我的北捷少女</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-10-09T13:48:36.000Z">
+                              10-09
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/05/07/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%8F%A3%E8%A9%A6-%E6%8E%83%E5%9C%B0%E6%A9%9F%E5%99%A8%E4%BA%BA/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">計程三口試-掃地機器人</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-05-07T06:15:57.000Z">
+                              05-07
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/04/17/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%A4%A7%E6%9C%83%E8%80%83%E7%B7%B4%E7%BF%92%E9%A1%8C/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">計程三大會考練習題</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-04-17T15:15:24.000Z">
+                              04-17
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">繼承練習0328</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-28T15:23:35.000Z">
+                              03-28
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
                     
-                    
-                      
-                      
-                        <!-- 没遇到Title的会被自动忽略年份，即使并不一致 -->
-                        
-                        <div class="collection-title">
-                          <a href="/archives/2022/"><h2 class="archive-year">2022</h2></a>
-                        </div>
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/10/09/%E6%88%91%E7%9A%84%E5%8C%97%E6%8D%B7%E5%B0%91%E5%A5%B3/" itemprop="url">
-                                    <span itemprop="name">我的北捷少女</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-10-09T21:48:36+08:00"
-                                    content="2022-10-09" >
-                                10-09
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/05/07/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%8F%A3%E8%A9%A6-%E6%8E%83%E5%9C%B0%E6%A9%9F%E5%99%A8%E4%BA%BA/" itemprop="url">
-                                    <span itemprop="name">計程三口試-掃地機器人</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-05-07T14:15:57+08:00"
-                                    content="2022-05-07" >
-                                05-07
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/04/17/%E8%A8%88%E7%A8%8B%E4%B8%89%E5%A4%A7%E6%9C%83%E8%80%83%E7%B7%B4%E7%BF%92%E9%A1%8C/" itemprop="url">
-                                    <span itemprop="name">計程三大會考練習題</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-04-17T23:15:24+08:00"
-                                    content="2022-04-17" >
-                                04-17
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/28/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920328/" itemprop="url">
-                                    <span itemprop="name">繼承練習0328</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-28T23:23:35+08:00"
-                                    content="2022-03-28" >
-                                03-28
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/22/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920322/" itemprop="url">
-                                    <span itemprop="name">繼承練習0322</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-22T21:24:32+08:00"
-                                    content="2022-03-22" >
-                                03-22
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/" itemprop="url">
-                                    <span itemprop="name">繼承練習0321</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-21T22:17:17+08:00"
-                                    content="2022-03-21" >
-                                03-21
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/06/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E4%B8%BB%E9%AB%94/" itemprop="url">
-                                    <span itemprop="name">貪食蛇-遊戲主體</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-06T14:15:09+08:00"
-                                    content="2022-03-06" >
-                                03-06
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E7%89%A9%E4%BB%B6/" itemprop="url">
-                                    <span itemprop="name">貪食蛇-遊戲物件</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-05T18:59:05+08:00"
-                                    content="2022-03-05" >
-                                03-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E7%A7%BB%E5%8B%95/" itemprop="url">
-                                    <span itemprop="name">貪食蛇-移動</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-05T11:13:42+08:00"
-                                    content="2022-03-05" >
-                                03-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E5%89%8D%E8%A8%80/" itemprop="url">
-                                    <span itemprop="name">貪食蛇-前言</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-03-05T10:35:44+08:00"
-                                    content="2022-03-05" >
-                                03-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/20/e537-00455/" itemprop="url">
-                                    <span itemprop="name">e537: 00455 - Periodic Strings</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-20T09:40:14+08:00"
-                                    content="2022-02-20" >
-                                02-20
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/19/c114-00409/" itemprop="url">
-                                    <span itemprop="name">c114: 00409 - Excuses, Excuses!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-19T10:12:06+08:00"
-                                    content="2022-02-19" >
-                                02-19
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/18/e543-00401/" itemprop="url">
-                                    <span itemprop="name">e543: 00401 - Palindromes</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-18T11:27:39+08:00"
-                                    content="2022-02-18" >
-                                02-18
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/17/c032-00382/" itemprop="url">
-                                    <span itemprop="name">c032: 00382 - Perfection</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-17T10:47:59+08:00"
-                                    content="2022-02-17" >
-                                02-17
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/16/c108-00305/" itemprop="url">
-                                    <span itemprop="name">c108: 00305 - Joseph</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-16T12:32:26+08:00"
-                                    content="2022-02-16" >
-                                02-16
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/15/c031-00264/" itemprop="url">
-                                    <span itemprop="name">c031: 00264 - Count on Cantor</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-15T11:03:12+08:00"
-                                    content="2022-02-15" >
-                                02-15
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/14/d182-00256/" itemprop="url">
-                                    <span itemprop="name">d182: 00256 - Quirksome Squares</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-14T12:04:21+08:00"
-                                    content="2022-02-14" >
-                                02-14
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/13/d089-00145/" itemprop="url">
-                                    <span itemprop="name">d089: 00145 - Gondwanaland Telecom</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-13T13:38:09+08:00"
-                                    content="2022-02-13" >
-                                02-13
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/12/UVA-11005/" itemprop="url">
-                                    <span itemprop="name">UVA-11005: Cheapest Base</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-12T14:35:19+08:00"
-                                    content="2022-02-12" >
-                                02-12
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/12/UVA-10642/" itemprop="url">
-                                    <span itemprop="name">UVA-10642: Can You Solve It?</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-12T11:54:44+08:00"
-                                    content="2022-02-12" >
-                                02-12
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/11/UVA-10221/" itemprop="url">
-                                    <span itemprop="name">UVA-10221: Satellites</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-11T23:11:10+08:00"
-                                    content="2022-02-11" >
-                                02-11
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/09/UVA-10093/" itemprop="url">
-                                    <span itemprop="name">UVA-10093: An Easy Problem!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-09T12:02:08+08:00"
-                                    content="2022-02-09" >
-                                02-09
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/09/d129-00136/" itemprop="url">
-                                    <span itemprop="name">d129: 00136 - Ugly Numbers</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-09T10:41:07+08:00"
-                                    content="2022-02-09" >
-                                02-09
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/08/d206-00108/" itemprop="url">
-                                    <span itemprop="name">d206: 00108 - Maximum Sum</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-08T19:49:01+08:00"
-                                    content="2022-02-08" >
-                                02-08
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/07/%E9%9B%86%E5%90%88/" itemprop="url">
-                                    <span itemprop="name">C++ STL: Set</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-07T18:37:32+08:00"
-                                    content="2022-02-07" >
-                                02-07
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/07/%E6%98%A0%E5%B0%84/" itemprop="url">
-                                    <span itemprop="name">C++ STL: Map</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-07T16:17:23+08:00"
-                                    content="2022-02-07" >
-                                02-07
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/07/%E4%BD%87%E5%88%97/" itemprop="url">
-                                    <span itemprop="name">C++ STL: Queue</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-07T14:53:28+08:00"
-                                    content="2022-02-07" >
-                                02-07
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/07/%E5%A0%86%E7%96%8A/" itemprop="url">
-                                    <span itemprop="name">C++ STL: Stack</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-07T12:18:52+08:00"
-                                    content="2022-02-07" >
-                                02-07
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/06/d424-00105/" itemprop="url">
-                                    <span itemprop="name">d424: 00105 - The Skyline Problem</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-06T23:02:39+08:00"
-                                    content="2022-02-06" >
-                                02-06
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/f709-12019/" itemprop="url">
-                                    <span itemprop="name">f709: 12019 - Doom's Day Algorithm</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T16:50:57+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/d186-11461/" itemprop="url">
-                                    <span itemprop="name">d186: 11461 - Square Numbers</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T16:22:44+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/d255-11417/" itemprop="url">
-                                    <span itemprop="name">d255: 11417 - GCD</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T16:07:39+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/e513-11349/" itemprop="url">
-                                    <span itemprop="name">e513: 11349 - Symmetric Matrix</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T15:43:25+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/c813-11332/" itemprop="url">
-                                    <span itemprop="name">c813: 11332 - Summing Digits</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T15:15:27+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/d750-11321/" itemprop="url">
-                                    <span itemprop="name">d750: 11321 - Sort! Sort!! and Sort!!!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T14:43:21+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/05/d189-11150/" itemprop="url">
-                                    <span itemprop="name">d189: 11150 - Cola</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-05T14:04:02+08:00"
-                                    content="2022-02-05" >
-                                02-05
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/f444-10268/" itemprop="url">
-                                    <span itemprop="name">f444: 10268 - 498-bis</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T16:47:40+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/e606-10057/" itemprop="url">
-                                    <span itemprop="name">e606: 10057 - A mid-summer nights dream</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T16:19:24+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/e605-10189/" itemprop="url">
-                                    <span itemprop="name">e605: 10189 - Minesweeper</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T16:02:48+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/e579-10050/" itemprop="url">
-                                    <span itemprop="name">e579: 10050 - Hartals</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T13:39:36+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/e578-10222/" itemprop="url">
-                                    <span itemprop="name">e578: 10222 - Decode the Mad man</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T13:27:33+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/04/e575-10908/" itemprop="url">
-                                    <span itemprop="name">e575: 10908 - Largest Squares</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-04T12:39:10+08:00"
-                                    content="2022-02-04" >
-                                02-04
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/03/e566-10190/" itemprop="url">
-                                    <span itemprop="name">e566: 10190 - Divide, But Not Quite Conquer!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-03T11:50:34+08:00"
-                                    content="2022-02-03" >
-                                02-03
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/03/e561-00299/" itemprop="url">
-                                    <span itemprop="name">e561: 00299 - Train Swapping</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-03T11:40:04+08:00"
-                                    content="2022-02-03" >
-                                02-03
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/03/e555-10170/" itemprop="url">
-                                    <span itemprop="name">e555: 10170 - The Hotel with Infinite Rooms</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-03T11:07:05+08:00"
-                                    content="2022-02-03" >
-                                02-03
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/03/e545-10019/" itemprop="url">
-                                    <span itemprop="name">e545: 10019 - Funny Encryption Method</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-03T10:56:17+08:00"
-                                    content="2022-02-03" >
-                                02-03
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/e531-10415/" itemprop="url">
-                                    <span itemprop="name">e531: 10415 - Eb Alto Saxophone Player</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T21:12:10+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/e516-10409/" itemprop="url">
-                                    <span itemprop="name">e516: 10409 - Die Game</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T20:38:55+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/e512-10242/" itemprop="url">
-                                    <span itemprop="name">e512: 10242 - Fourth Point!!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T20:23:02+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/e510-10056/" itemprop="url">
-                                    <span itemprop="name">e510: 10056 - What is the Probability?</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T17:54:15+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/e507-10252/" itemprop="url">
-                                    <span itemprop="name">e507: 10252 - Common Permutation</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T17:21:54+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/d672-10922/" itemprop="url">
-                                    <span itemprop="name">d672: 10922 - 2 the 9s</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T16:30:51+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/02/d492-10226/" itemprop="url">
-                                    <span itemprop="name">d492: 10226 - Hardwood species</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-02T10:43:47+08:00"
-                                    content="2022-02-02" >
-                                02-02
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d387-10235/" itemprop="url">
-                                    <span itemprop="name">d387: 10235 - Simply Emirp</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T23:10:19+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d306-10193/" itemprop="url">
-                                    <span itemprop="name">d306: 10193 - All You Need Is Love</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T22:58:32+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/%E7%95%99%E8%A8%80%E6%9D%BF/" itemprop="url">
-                                    <span itemprop="name">留言板</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T22:29:56+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d235-10929/" itemprop="url">
-                                    <span itemprop="name">d235: 10929 - You can say 11</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T16:46:17+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d226-10071/" itemprop="url">
-                                    <span itemprop="name">d226: 10071 - Back to High School Physics</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T16:40:22+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d123-11063/" itemprop="url">
-                                    <span itemprop="name">d123: 11063 - B2-Sequence</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T16:22:26+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/d097-10038/" itemprop="url">
-                                    <span itemprop="name">d097: 10038 - Jolly Jumpers</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T16:02:46+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c082-00118/" itemprop="url">
-                                    <span itemprop="name">c082: 00118 - Mutant Flatworld Expolrers</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T15:34:56+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c045-00490/" itemprop="url">
-                                    <span itemprop="name">c045: 00490 - Rotating Sentences</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T15:19:25+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c044-10008/" itemprop="url">
-                                    <span itemprop="name">c044: 10008 - What's Cryptanalysis</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T12:56:43+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c039-00100/" itemprop="url">
-                                    <span itemprop="name">c039: 00100 - The 3n + 1 problem</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T11:46:28+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c022-10783/" itemprop="url">
-                                    <span itemprop="name">c022: 10783 - Odd Sum</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T11:35:14+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c014-10035/" itemprop="url">
-                                    <span itemprop="name">c014: 10035 - Primary Arithmetic</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T11:16:33+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/02/01/c012-10062/" itemprop="url">
-                                    <span itemprop="name">c012: 10062 - Tell me the frequencies!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-02-01T10:58:02+08:00"
-                                    content="2022-02-01" >
-                                02-01
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/c007-00272/" itemprop="url">
-                                    <span itemprop="name">c007: 00272 - TeX Quotes</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T21:41:27+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/c004-10812/" itemprop="url">
-                                    <span itemprop="name">c004: 10812 - Beat the Spread!</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T21:26:37+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a743-10420/" itemprop="url">
-                                    <span itemprop="name">a743: 10420 - List of Conquests</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T21:04:07+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a741-10101/" itemprop="url">
-                                    <span itemprop="name">a741: 10101 - Bangla Numbers</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T20:39:55+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a737-10041/" itemprop="url">
-                                    <span itemprop="name">a737: 10041 - Vito's family</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T19:24:20+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a134-00948/" itemprop="url">
-                                    <span itemprop="name">a134: 00948 - Fibonaccimal Base</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T18:53:45+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a132-10931/" itemprop="url">
-                                    <span itemprop="name">a132: 10931 - Parity</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T17:26:36+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a012-10055/" itemprop="url">
-                                    <span itemprop="name">a012: 10055 - Hashmat the Brave Warrior</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T17:02:41+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a002-%E7%B0%A1%E6%98%93%E5%8A%A0%E6%B3%95/" itemprop="url">
-                                    <span itemprop="name">a002: 簡易加法</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T12:27:34+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/31/a001-%E5%93%88%E5%9B%89/" itemprop="url">
-                                    <span itemprop="name">a001: 哈囉</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-31T12:03:05+08:00"
-                                    content="2022-01-31" >
-                                01-31
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/30/2022-1-30-starburst/" itemprop="url">
-                                    <span itemprop="name">starburst</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-30T00:00:00+08:00"
-                                    content="2022-01-30" >
-                                01-30
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                      
-                      
-                      
-                        <article class="post" itemscope>
-                          <header class="post-header">
-                            <h3 class="post-title">
-                              
-                                  <a class="post-title-link" href="/2022/01/29/hello-world/" itemprop="url">
-                                    <span itemprop="name">Hello world</span>
-                                  </a>
-                              
-                            </h3>
-                            <div class="post-meta">
-                              <time class="post-time" itemprop="dateCreated"
-                                    datetime="2022-01-29T00:00:00+08:00"
-                                    content="2022-01-29" >
-                                01-29
-                              </time>
-                            </div>
-                          </header>
-                        </article>
-                      
-                    
-                  </div>
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/22/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920322/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">繼承練習0322</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-22T13:24:32.000Z">
+                              03-22
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/21/%E7%B9%BC%E6%89%BF%E7%B7%B4%E7%BF%920321/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">繼承練習0321</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-21T14:17:17.000Z">
+                              03-21
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/06/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E4%B8%BB%E9%AB%94/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">貪食蛇-遊戲主體</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-06T06:15:09.000Z">
+                              03-06
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E9%81%8A%E6%88%B2%E7%89%A9%E4%BB%B6/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">貪食蛇-遊戲物件</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-05T10:59:05.000Z">
+                              03-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E7%A7%BB%E5%8B%95/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">貪食蛇-移動</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-05T03:13:42.000Z">
+                              03-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/03/05/%E8%B2%AA%E9%A3%9F%E8%9B%87-%E5%89%8D%E8%A8%80/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">貪食蛇-前言</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-03-05T02:35:44.000Z">
+                              03-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/20/e537-00455/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e537: 00455 - Periodic Strings</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-20T01:40:14.000Z">
+                              02-20
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/19/c114-00409/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c114: 00409 - Excuses, Excuses!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-19T02:12:06.000Z">
+                              02-19
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/18/e543-00401/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e543: 00401 - Palindromes</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-18T03:27:39.000Z">
+                              02-18
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/17/c032-00382/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c032: 00382 - Perfection</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-17T02:47:59.000Z">
+                              02-17
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/16/c108-00305/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c108: 00305 - Joseph</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-16T04:32:26.000Z">
+                              02-16
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/15/c031-00264/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c031: 00264 - Count on Cantor</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-15T03:03:12.000Z">
+                              02-15
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/14/d182-00256/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d182: 00256 - Quirksome Squares</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-14T04:04:21.000Z">
+                              02-14
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/13/d089-00145/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d089: 00145 - Gondwanaland Telecom</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-13T05:38:09.000Z">
+                              02-13
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/12/UVA-11005/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">UVA-11005: Cheapest Base</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-12T06:35:19.000Z">
+                              02-12
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/12/UVA-10642/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">UVA-10642: Can You Solve It?</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-12T03:54:44.000Z">
+                              02-12
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/11/UVA-10221/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">UVA-10221: Satellites</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-11T15:11:10.000Z">
+                              02-11
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/09/UVA-10093/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">UVA-10093: An Easy Problem!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-09T04:02:08.000Z">
+                              02-09
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/09/d129-00136/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d129: 00136 - Ugly Numbers</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-09T02:41:07.000Z">
+                              02-09
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/08/d206-00108/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d206: 00108 - Maximum Sum</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-08T11:49:01.000Z">
+                              02-08
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/07/%E9%9B%86%E5%90%88/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">C++ STL: Set</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-07T10:37:32.000Z">
+                              02-07
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/07/%E6%98%A0%E5%B0%84/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">C++ STL: Map</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-07T08:17:23.000Z">
+                              02-07
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/07/%E4%BD%87%E5%88%97/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">C++ STL: Queue</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-07T06:53:28.000Z">
+                              02-07
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/07/%E5%A0%86%E7%96%8A/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">C++ STL: Stack</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-07T04:18:52.000Z">
+                              02-07
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/06/d424-00105/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d424: 00105 - The Skyline Problem</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-06T15:02:39.000Z">
+                              02-06
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/f709-12019/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">f709: 12019 - Doom's Day Algorithm</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T08:50:57.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/d186-11461/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d186: 11461 - Square Numbers</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T08:22:44.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/d255-11417/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d255: 11417 - GCD</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T08:07:39.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/e513-11349/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e513: 11349 - Symmetric Matrix</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T07:43:25.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/c813-11332/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c813: 11332 - Summing Digits</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T07:15:27.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/d750-11321/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d750: 11321 - Sort! Sort!! and Sort!!!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T06:43:21.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/05/d189-11150/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d189: 11150 - Cola</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-05T06:04:02.000Z">
+                              02-05
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/f444-10268/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">f444: 10268 - 498-bis</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T08:47:40.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/e606-10057/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e606: 10057 - A mid-summer nights dream</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T08:19:24.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/e605-10189/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e605: 10189 - Minesweeper</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T08:02:48.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/e579-10050/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e579: 10050 - Hartals</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T05:39:36.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/e578-10222/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e578: 10222 - Decode the Mad man</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T05:27:33.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/04/e575-10908/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e575: 10908 - Largest Squares</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-04T04:39:10.000Z">
+                              02-04
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/03/e566-10190/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e566: 10190 - Divide, But Not Quite Conquer!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-03T03:50:34.000Z">
+                              02-03
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/03/e561-00299/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e561: 00299 - Train Swapping</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-03T03:40:04.000Z">
+                              02-03
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/03/e555-10170/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e555: 10170 - The Hotel with Infinite Rooms</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-03T03:07:05.000Z">
+                              02-03
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/03/e545-10019/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e545: 10019 - Funny Encryption Method</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-03T02:56:17.000Z">
+                              02-03
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/e531-10415/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e531: 10415 - Eb Alto Saxophone Player</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T13:12:10.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/e516-10409/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e516: 10409 - Die Game</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T12:38:55.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/e512-10242/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e512: 10242 - Fourth Point!!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T12:23:02.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/e510-10056/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e510: 10056 - What is the Probability?</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T09:54:15.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/e507-10252/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">e507: 10252 - Common Permutation</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T09:21:54.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/d672-10922/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d672: 10922 - 2 the 9s</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T08:30:51.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/02/d492-10226/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d492: 10226 - Hardwood species</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-02T02:43:47.000Z">
+                              02-02
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d387-10235/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d387: 10235 - Simply Emirp</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T15:10:19.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d306-10193/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d306: 10193 - All You Need Is Love</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T14:58:32.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/%E7%95%99%E8%A8%80%E6%9D%BF/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">留言板</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T14:29:56.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d235-10929/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d235: 10929 - You can say 11</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T08:46:17.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d226-10071/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d226: 10071 - Back to High School Physics</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T08:40:22.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d123-11063/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d123: 11063 - B2-Sequence</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T08:22:26.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/d097-10038/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">d097: 10038 - Jolly Jumpers</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T08:02:46.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c082-00118/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c082: 00118 - Mutant Flatworld Expolrers</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T07:34:56.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c045-00490/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c045: 00490 - Rotating Sentences</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T07:19:25.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c044-10008/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c044: 10008 - What's Cryptanalysis</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T04:56:43.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c039-00100/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c039: 00100 - The 3n + 1 problem</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T03:46:28.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c022-10783/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c022: 10783 - Odd Sum</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T03:35:14.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c014-10035/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c014: 10035 - Primary Arithmetic</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T03:16:33.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/02/01/c012-10062/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c012: 10062 - Tell me the frequencies!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-02-01T02:58:02.000Z">
+                              02-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/c007-00272/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c007: 00272 - TeX Quotes</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T13:41:27.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/c004-10812/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">c004: 10812 - Beat the Spread!</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T13:26:37.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a743-10420/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a743: 10420 - List of Conquests</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T13:04:07.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a741-10101/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a741: 10101 - Bangla Numbers</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T12:39:55.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a737-10041/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a737: 10041 - Vito's family</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T11:24:20.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a134-00948/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a134: 00948 - Fibonaccimal Base</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T10:53:45.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a132-10931/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a132: 10931 - Parity</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T09:26:36.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a012-10055/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a012: 10055 - Hashmat the Brave Warrior</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T09:02:41.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a002-%E7%B0%A1%E6%98%93%E5%8A%A0%E6%B3%95/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a002: 簡易加法</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T04:27:34.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/31/a001-%E5%93%88%E5%9B%89/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">a001: 哈囉</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-31T04:03:05.000Z">
+                              01-31
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/30/2022-1-30-starburst/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">starburst</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-29T16:00:00.000Z">
+                              01-30
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                    
+                    
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2022/01/29/hello-world/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">Hello world</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2022-01-28T16:00:00.000Z">
+                              01-29
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
                 </div>
+              </div>
             </div>
         </div>
       </div>
@@ -2069,11 +1992,37 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/marin.gif" />
+            <img class="about-photo" src="/images/marin.gif" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
         <p class="text-center">もっと強くなりたい</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                81
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分類
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                標籤
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
     </div>
 </aside>
             
@@ -2346,9 +2295,6 @@
                     </div>
                 
                 
-                
-                <script src="//code.tidio.co/houtiasuiwkwumofst66c7qu5e4czlb9.js"></script>
-                
             </div>
             <div class="box gotop-box">
                 <span class="fa fa-chevron-up"></span>
@@ -2359,8 +2305,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -2374,9 +2320,9 @@
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="netease"
         type="playlist"
@@ -2388,14 +2334,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YEK9RFHCSV"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-YEK9RFHCSV');</script>
 
